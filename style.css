@@ -1,7 +1,18 @@
+
+header, footer {
+    background-color: #253B2F;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 body {
     background-color: #FAF5EB;
 }
 
-header, footer {
-    background-color: #253B2F;
+.cards {
+    display: flex;
+    flex-direction: column;
+    outline-width: thin;
 }
