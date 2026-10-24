@@ -4,15 +4,34 @@ header, footer {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 body {
     background-color: #FAF5EB;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    row-gap: 1rem;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    background-color: #FAF5EB;
+}
+
+.hero-button {
+    background-color: #954822;
+    border: solid #954822;
+    border-radius: 1rem;
+}
+
+
 .cards {
     display: flex;
     flex-direction: column;
-    outline-width: thin;
-}
+    flex-wrap: ;
+    border: 2px solid #E0E3D3;
+    background-color: #E0E3D3;
+    border-radius: 7px;
