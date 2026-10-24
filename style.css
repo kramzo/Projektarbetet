@@ -1,65 +1,84 @@
 body {
-     font-family: "Petrona", serif;
+  font-family: "Petrona", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-    background-color: #FAF5EB;
-    margin: 0%;
+  background-color: #faf5eb;
+  margin: 0%;
 }
 
 /** <weight>: Use a value from 100 to 900 **/
 /** <uniquifier>: Use a unique and descriptive class name **/
 
-
-
-
-header, footer {
-    
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    margin: 0%;
-    justify-content: space-evenly;
-    background-color: #253B2F;
-
+p {
+  font-weight: bold;
 }
 
-h1 { 
-    font-size: 20px;
+header {
+  color: #ffffff;
+  display: grid;
+  grid-column: 1/ 4;
+  grid-template-areas: "header header";
+  margin: 0%;
+  justify-content: space-evenly;
+  background-color: #253b2f;
 }
 
+footer {
+  grid-area: footer;
+  color: #ffffff;
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-areas: "footer footer";
+  margin: 0%;
+  background-color: #253b2f;
+}
 
+h1 {
+  font-size: 20px;
+}
+
+main {
+  grid-area: main;
+}
 
 h2 {
-    font-size: 32;
-    margin: 0;
+  font-size: 32;
+  margin: 0;
 }
 
 /**HERO**/
 .hero {
-    display: grid;
-    font-size: 20px;
-    grid-template-rows: repeat(1, 1fr);
-    row-gap: 10px;
-    padding: 0;
-    margin: 0;
-    background-color: #FAF5EB;
+  display: grid;
+  font-size: 20px;
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 10px;
+  padding: 0;
+  margin: 0;
+  background-color: #faf5eb;
 }
 
 .hero-button {
-font-family: "Petrona", serif;
-    background-color: #954822;
-    border: solid #954822;
-    border-radius: 0.8rem;
+  font-family: "Petrona", serif;
+  background-color: #954822;
+  border: solid #954822;
+  border-radius: 0.8rem;
 }
 
-
 .cards {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem;
-    margin: 1rem 1rem;
-    border: 2px solid #E0E3D3;
-    background-color: #E0E3D3;
-    border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  border: 2px solid #e0e3d3;
+  background-color: #e0e3d3;
+  border-radius: 7px;
+}
+
+.meeting {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-color: #c3b79e;
 }
