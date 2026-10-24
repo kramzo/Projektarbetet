@@ -15,6 +15,7 @@ p {
 }
 
 header {
+    grid-area: header;
   color: #ffffff;
   display: grid;
   grid-column: 1/ 4;
@@ -28,9 +29,8 @@ footer {
   grid-area: footer;
   color: #ffffff;
   display: grid;
-  grid-column: 1;
-  grid-row: 2;
-  grid-template-areas: "footer footer";
+  grid-column: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
   margin: 0%;
   background-color: #253b2f;
 }
