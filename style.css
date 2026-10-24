@@ -5,15 +5,11 @@ body {
   font-style: normal;
     background-color: #FAF5EB;
     margin: 0%;
-    padding: 1fr;
 }
 
-// <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
+/** <weight>: Use a value from 100 to 900 **/
+/** <uniquifier>: Use a unique and descriptive class name **/
 
-.perona-font {
- 
-}
 
 
 
@@ -28,34 +24,33 @@ header, footer {
 
 }
 
-h1 { }
+h1 { 
+    font-size: 20px;
+}
 
 
 
 h2 {
-    font-size: 3rem;
+    font-size: 32;
     margin: 0;
 }
 
-
+/**HERO**/
 .hero {
-    font-size: 15px;
-    font-weight: bold;
     display: grid;
+    font-size: 20px;
     grid-template-rows: repeat(1, 1fr);
     row-gap: 10px;
-    padding: 1rem 1rem;
-    margin: 1rem;
+    padding: 0;
+    margin: 0;
     background-color: #FAF5EB;
 }
 
 .hero-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;;
+font-family: "Petrona", serif;
     background-color: #954822;
     border: solid #954822;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
 }
 
 
