@@ -40,7 +40,7 @@ main {
 }
 
 h2 {
-  font-size: 32;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -50,17 +50,32 @@ h2 {
   font-size: 20px;
   grid-template-rows: repeat(1, 1fr);
   row-gap: 10px;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   background-color: #faf5eb;
 }
 
 .hero-button {
   font-family: "Petrona", serif;
+  font-weight: bold;
+  font-size: 15px;
   background-color: #954822;
   border: solid #954822;
   border-radius: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.hero-button2 {
+  font-family: "Petrona", serif;
+    font-weight: bold;
+    font-size: 15px;
+  border: solid #954822;
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: #954822;
 }
 
 /**CARDS**/
@@ -76,12 +91,16 @@ h2 {
 
 .yarn {
   stroke: #954822;
- width: 80px;
+ width: 5rem;
  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
-.svamp{
-  width: 130px;
+.mushroom {
+  display: inline-block;
+     width: 4rem; 
+    height: auto;
 }
 
 .create, .fika, .shop {
