@@ -31,16 +31,6 @@ align-items: center;
 margin: 0.2rem;
 }
 
-footer {
-  grid-area: footer;
-  color: #ffffff;
-  display: grid;
-  grid-column: repeat(3, 1fr);
-    grid-template-rows: 100px 200px;
-  margin: 0%;
-  background-color: #253b2f;
-}
-
 h1 {
   font-size: 20px;
 }
@@ -69,12 +59,31 @@ h2 {
   font-family: "Petrona", serif;
   background-color: #954822;
   border: solid #954822;
-  border-radius: 0.8rem;
+  border-radius: 1.5rem;
+  padding: 0.2rem;
 }
 
+/**CARDS**/
 .cards {
+ 
+}
+
+.cards h4 {
   display: flex;
-  flex-direction: column;
+  justify-content:space-around;
+
+}
+
+.yarn {
+  stroke: #954822;
+ width: 80px;
+ height: auto;
+}
+
+.create, .fika, .shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 1rem 1rem;
   margin: 1rem 1rem;
   border: 2px solid #e0e3d3;
@@ -87,4 +96,13 @@ h2 {
   flex-direction: column;
   padding: 1rem;
   border-color: #c3b79e;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #253b2f;
 }
