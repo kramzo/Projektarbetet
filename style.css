@@ -15,8 +15,8 @@ p {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(1, 3fr);
   align-items: center;
   padding: 1rem;
   color: #ffffff;
@@ -49,32 +49,35 @@ h2 {
   display: grid;
   font-size: 20px;
   grid-template-rows: repeat(1, 1fr);
-  row-gap: 10px;
-  padding: 10px;
+padding: 12px 10px 0px 10px;
   margin: 0;
   background-color: #faf5eb;
 }
 
+.hero p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
 .hero-button {
+  display: inline-block;
   font-family: "Petrona", serif;
   font-weight: bold;
   font-size: 15px;
-  background-color: #954822;
   border: solid #954822;
   border-radius: 1.5rem;
   padding: 0.4rem;
   text-decoration: none;
-  color:#ffffff;
 }
 
-.hero-button2 {
-  font-family: "Petrona", serif;
-    font-weight: bold;
-    font-size: 15px;
-  border: solid #954822;
-  border-radius: 1.5rem;
-  padding: 0.4rem;
-  text-decoration: none;
+.hero-button-primary {
+  background-color: #954822;
+  color: #ffffff;
+}
+
+.hero-button-secondary {
   color: #954822;
 }
 
