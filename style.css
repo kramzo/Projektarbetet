@@ -80,6 +80,10 @@ h2 {
  height: auto;
 }
 
+.svamp{
+  width: 130px;
+}
+
 .create, .fika, .shop {
   display: flex;
   flex-direction: row;
