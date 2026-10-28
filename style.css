@@ -27,8 +27,20 @@ header {
 .logo p {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   align-items: center;
   margin: 0.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 h1 {
