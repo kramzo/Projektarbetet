@@ -36,6 +36,11 @@ header {
   color: #ffffff;
 }
 
+.logo-image {
+  width: 100px;
+  height: 100px;
+}
+
 .logo-text {
   font-size: 1.5rem;
   font-weight: 600;
