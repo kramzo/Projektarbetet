@@ -102,41 +102,110 @@ h2 {
 }
 
 /**CARDS**/
-.cards {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.yarn {
-  stroke: #954822;
-  width: 5rem;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
 
 .mushroom,
-.cake {
+.cake,
+.yarn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  stroke: #954822;
   width: 5rem;
 }
 
-.create,
+
+/* Bara själva korten */
 .fika,
 .shop,
-.create,
-.fika-arrow {
+.create {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 1fr;
-  justify-content: space-evenly;
+  grid-template-columns: 5rem minmax(0, 1fr);
   align-items: center;
-  font-size: 18px;
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem 1rem;
+  margin: 1rem;
   border: 2px solid #e0e3d3;
   background-color: #e0e3d3;
   border-radius: 7px;
+}
+
+/* Ikonerna i korten */
+.mushroom,
+.cake,
+.yarn {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Rubrik och beskrivning */
+.cards h4 {
+  margin: 0 0 0.3rem;
+}
+
+.cards p {
+  margin: 0;
+}
+
+/* Pilarna */
+.fika-arrow {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.fika-arrow img {
+  display: block;
+  width: 1.5rem;
+  height: auto;
+}/* Bara själva korten */
+.fika,
+.shop,
+.create {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid #e0e3d3;
+  background-color: #e0e3d3;
+  border-radius: 7px;
+}
+
+/* Ikonerna i korten */
+.mushroom,
+.cake,
+.yarn {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Rubrik och beskrivning */
+.cards h4 {
+  margin: 0 0 0.3rem;
+}
+
+.cards p {
+  margin: 0;
+}
+
+/* Pilarna */
+.fika-arrow {
+  display: flexbox;
+  justify-content: flex-end
+}
+
+.fika-arrow img {
+  display: block;
+  width: 1.5rem;
+  height: auto;
 }
 
 /* Hela avdelningen */
