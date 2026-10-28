@@ -23,7 +23,7 @@ header {
   background-color: #253b2f;
 }
 
-.logo h1,
+.logo,
 .logo p {
   display: flex;
   flex-direction: column;
