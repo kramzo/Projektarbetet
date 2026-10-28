@@ -36,6 +36,7 @@ h1 {
 }
 
 main {
+  background-color: #FAF5EB;
   grid-area: main;
 }
 
@@ -46,6 +47,7 @@ h2 {
 
 /**HERO**/
 .hero {
+  background-color: #FAF5EB;
   display: grid;
   font-size: 20px;
   grid-template-rows: repeat(1, 1fr);
@@ -126,8 +128,12 @@ h2 {
 }
 
 .meeting {
+  background-color:#FAF5EB;
+  border: 1px solid #c3b79e;
+  border-radius: 0.5rem;
+  border-width: 1px;
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   padding: 1rem;
   border-color: #c3b79e;
 }
@@ -136,10 +142,14 @@ h2 {
   display: flex;
   order: -1;
   justify-content: flex-start;
-  width: 200px;
+  width: 100%;
   height: auto;
-  mask-image: url(images/sticka.jpg), url(images/skapa.jpg);
-  mask;
+}
+
+.creation-generator {
+  display: ;
+  padding: 10px;
+  background-color: #E0D7E4;
 }
 
 footer {
