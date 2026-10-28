@@ -14,24 +14,28 @@ p {
 }
 
 header {
-  background-color: #253B2F; 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: 1fr auto 1fr;
   align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
-  gap: 10px;
-  width: auto;
   color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 300;
+  background-color: #253b2f;
+}
+
+.logo-image {
+  justify-self: start;
+  width: 3rem;
+  height: auto;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.3 rem;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
 }
 
 .logo-text {
@@ -44,14 +48,6 @@ header {
 .logo p {
   margin: 0;
   font-size: 1rem;
-  color: #ffffff;
-}
-
-.logo-image {
-  display: block;
-  align-items: flex-start;
-  width: 80px;
-  height: auto;
 }
 
 
@@ -78,7 +74,6 @@ h2 {
   grid-template-rows: repeat(1, 1fr);
   padding: 12px 10px 0px 10px;
   margin: 0;
-  background-color: #faf5eb;
 }
 
 .hero p {
@@ -110,64 +105,58 @@ h2 {
 
 /**CARDS**/
 .cards {
+  height: 62px;
+  width: auto;
   font-size: 20px;
   margin: 0;
-  padding: 5px;
+  padding: ;
 }
 
 .yarn {
   stroke: #954822;
   width: 5rem;
-  height: auto;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
 
-.mushroom {
+.mushroom,.cake {
   display: inline-block;
   width: 5rem;
-  height: auto;
 }
 
-.cake {
-  display: inline-block;
-  width: 5rem;
-  height: auto;
-}
 
 .create,
 .fika,
-.shop {
+.shop, .create, .fika-arrow{
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 18px;
   gap: 1rem;
-  padding: 1rem 1rem;
   margin: 1rem 1rem;
   border: 2px solid #e0e3d3;
   background-color: #e0e3d3;
   border-radius: 7px;
 }
 
-.meeting {
+
+
+.meeting, {
+  display: flex;
+  order: 1-;
+  justify-content: flex-start;
+  width: 100%;
   background-color: #faf5eb;
   border: 1px solid #c3b79e;
   border-radius: 0.5rem;
   border-width: 1px;
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
   border-color: #c3b79e;
 }
 
-.meeting img {
-  display: flex;
-  order: -1;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-}
 
 .creation-generator {
   height: 91px;
