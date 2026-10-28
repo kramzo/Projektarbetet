@@ -3,7 +3,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  background-color: #faf5eb;
   margin: 0%;
 }
 
@@ -15,30 +14,24 @@ p {
 }
 
 header {
-  display: grid;
-  grid-template-rows: repeat(1, 3fr);
+  background-color: #253B2F; 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  gap: 10px;
+  width: auto;
   color: #ffffff;
-  background-color: #253b2f;
-}
-
-.logo,
-.logo p {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  align-items: center;
-  margin: 0.2rem;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #ffffff;
 }
 
-.logo-image {
-  width: 100px;
-  height: 100px;
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3 rem;
 }
 
 .logo-text {
@@ -48,12 +41,27 @@ header {
   color: #ffffff;
 }
 
+.logo p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.logo-image {
+  display: block;
+  align-items: flex-start;
+  width: 80px;
+  height: auto;
+}
+
+
+
 h1 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 main {
-  background-color: #FAF5EB;
+  background-color: #faf5eb;
   grid-area: main;
 }
 
@@ -64,7 +72,7 @@ h2 {
 
 /**HERO**/
 .hero {
-  background-color: #FAF5EB;
+  background-color: #faf5eb;
   display: grid;
   font-size: 20px;
   grid-template-rows: repeat(1, 1fr);
@@ -107,7 +115,6 @@ h2 {
   padding: 5px;
 }
 
-
 .yarn {
   stroke: #954822;
   width: 5rem;
@@ -128,7 +135,6 @@ h2 {
   height: auto;
 }
 
-
 .create,
 .fika,
 .shop {
@@ -145,7 +151,7 @@ h2 {
 }
 
 .meeting {
-  background-color:#FAF5EB;
+  background-color: #faf5eb;
   border: 1px solid #c3b79e;
   border-radius: 0.5rem;
   border-width: 1px;
@@ -164,9 +170,9 @@ h2 {
 }
 
 .creation-generator {
-  display: ;
+  height: 91px;
   padding: 10px;
-  background-color: #E0D7E4;
+  background-color: #e0d7e4;
 }
 
 footer {
