@@ -103,6 +103,13 @@ h2 {
   height: auto;
 }
 
+.cake {
+  display: inline-block;
+  width: 5rem;
+  height: auto;
+}
+
+
 .create,
 .fika,
 .shop {
@@ -120,9 +127,19 @@ h2 {
 
 .meeting {
   display: flex;
-  flex-direction: column;
+  flex-direction: rows;
   padding: 1rem;
   border-color: #c3b79e;
+}
+
+.meeting img {
+  display: flex;
+  order: -1;
+  justify-content: flex-start;
+  width: 200px;
+  height: auto;
+  mask-image: url(images/sticka.jpg), url(images/skapa.jpg);
+  mask;
 }
 
 footer {
