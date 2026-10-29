@@ -52,6 +52,7 @@ header {
 
 h1 {
   font-size: 2rem;
+
 }
 
 main {
@@ -66,39 +67,33 @@ h2 {
 
 /**HERO**/
 .hero {
-  background-color: #faf5eb;
-  display: grid;
-  font-size: 20px;
-  grid-template-rows: repeat(1, 1fr);
-  padding: 12px 10px 0px 10px;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  gap: 0;
+padding: 0;
+margin: 0;
+background-color: #faf5eb;
 }
 
 .hero-button {
   display: inline-block;
-  font-family: "Petrona", serif;
   font-weight: bold;
   font-size: 15px;
-  border: solid #954822;
+  background-color: #954822;
+  border: solid #954822 2.5px;
+  color: white;
   border-radius: 1.5rem;
   padding: 0.4rem;
   text-decoration: none;
 }
 
-.hero-button-primary {
-  background-color: #954822;
-  color: #ffffff;
+.hero-button-secondary {
+  background-color: transparent;
+  color:#954822;
 }
 
-.hero-button-secondary {
-  color: #954822;
+.hero-image {
+display: block;
+  width:100%;
+  height:auto;
+  padding:
 }
 
 /**CARDS**/
