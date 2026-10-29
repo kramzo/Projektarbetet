@@ -138,6 +138,7 @@ display: block;
 hr {
   border:#954822 1px solid;
   width: 10rem;
+  max
 }
 
 .hr-mushroom {
@@ -246,9 +247,35 @@ hr {
   justify-content: flex-end
 }
 
-/*HITTA DIN PYSSELSTUND*/
+/*HITTA DIN PYSSELSTUND - KNAPPAR (m-button1 är i samma som hero-knapparna*/
 
-.meet
+.meeting-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+
+.m-button1 {
+  background-color: #954822;
+  border: solid #954822 2.5px;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+}
+
+
+.m-button2, .m-button3 {
+  border: solid 2.5px #e0e3d3E;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #000000;
+  background-color: #e0e3d3;
+  text-decoration: none;
+}
 
 /* Hela avdelningen */
 .meetings {
@@ -264,14 +291,12 @@ padding: 0;
   margin: 0;
 }
 
-.meetings p {
-  margin: 0 5;
-}
 
 /* Ett träffkort */
 .meeting {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
