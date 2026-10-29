@@ -90,14 +90,27 @@ background-color: #faf5eb;
   padding: 1rem;
 }
 
+.hero-button-primary {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.button-arrow {
+  width: 20px;
+  height: auto;
+}
+
+
 .hero-button {
- 
   font-size: 15px;
   background-color: #954822;
   border: solid #954822 2.5px;
   color: white;
   border-radius: 1.5rem;
-  padding: 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
   text-decoration: none;
 }
 
@@ -233,6 +246,9 @@ hr {
   justify-content: flex-end
 }
 
+/*HITTA DIN PYSSELSTUND*/
+
+.meet
 
 /* Hela avdelningen */
 .meetings {
