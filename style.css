@@ -249,12 +249,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  gap: 5px;
   color: #ffffff;
   background-color: #253b2f;
 }
 
 .footer-leaf, .footer-leaf2 {
-  height: 20px
+  height: 20px;
+  width: auto;
+}
+
+.footer-leaf2 {
+    transform: scaleX(-1);
 }
 
 .logo-footer {
