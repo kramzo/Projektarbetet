@@ -10,7 +10,7 @@ body {
 /** <uniquifier>: Use a unique and descriptive class name **/
 
 p {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 header {
@@ -229,6 +229,12 @@ display: block;
   flex-shrink: 0;
   display: block;
 }
+
+.meeting-content{
+  
+}
+
+
 
 /* Textgruppen får kunna krympa */
 .meeting > div {
