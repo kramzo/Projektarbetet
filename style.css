@@ -53,7 +53,7 @@ header {
 h1 {
   font-size: 2rem;
   margin: 0;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
 
 }
 
@@ -68,8 +68,11 @@ h2 {
 }
 
 /**HERO**/
-.hero {
-padding: 0;
+.hero-content {
+display: grid;
+grid-template-columns: 19rem;
+grid-template-rows: 1fr;
+padding: 20px;
 margin: 0;
 background-color: #faf5eb;
 }
@@ -78,6 +81,14 @@ background-color: #faf5eb;
   font-weight: 700;
   margin: 0;
   padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.hero-corner-leaf {
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+  width:90px;
+  height: auto;
 }
 
 .buttons {
@@ -138,7 +149,6 @@ display: block;
 hr {
   border:#954822 1px solid;
   width: 10rem;
-  max
 }
 
 .hr-mushroom {
