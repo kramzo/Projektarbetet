@@ -113,11 +113,25 @@ display: block;
 }
 
 /**LINJE**/
+
+.lines {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap:10px;
+
+}
+
 hr {
-  display: blocks;
-  block
   border:#954822 1px solid;
-  width:10rem;
+  width: 10rem;
+}
+
+.hr-mushroom {
+  width: 2.5rem;
+  height: auto;
+  image-rendering: auto;
+  
 }
 
 
