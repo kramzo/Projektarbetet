@@ -205,6 +205,9 @@ display: block;
 
 /* Hela avdelningen */
 .meetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -233,12 +236,14 @@ display: block;
   min-width: 0;
 }
 
+/*CREATION GENERATOR*/
 .creation-generator {
   height: 91px;
   padding: 10px;
   background-color: #e0d7e4;
 }
 
+/*FOOTER*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -246,4 +251,13 @@ footer {
   padding: 1rem;
   color: #ffffff;
   background-color: #253b2f;
+}
+
+.footer-leaf, .footer-leaf2 {
+  height: 20px
+}
+
+.logo-footer {
+  height:80px;
+  width:auto;
 }
