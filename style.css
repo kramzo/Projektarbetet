@@ -119,7 +119,6 @@ display: block;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem;
   border: 2px solid #e0e3d3;
   background-color: #e0e3d3;
   border-radius: 7px;
@@ -128,7 +127,7 @@ display: block;
 /* Ikonerna i korten */
 .mushroom,
 .cake,
-.yarn {
+.yarn, {
   display: block;
   width: 100%;
   height: auto;
@@ -195,11 +194,6 @@ display: block;
   justify-content: flex-end
 }
 
-.fika-arrow img {
-  display: block;
-  width: 1.5rem;
-  height: auto;
-}
 
 /* Hela avdelningen */
 .meetings {
@@ -207,6 +201,16 @@ display: block;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+}
+
+h3 {
+font-weight: 600;  
+padding: 0;
+  margin: 0;
+}
+
+.meetings p {
+  margin: 0 5;
 }
 
 /* Ett träffkort */
