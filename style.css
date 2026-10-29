@@ -52,6 +52,8 @@ header {
 
 h1 {
   font-size: 2rem;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -146,15 +148,12 @@ display: block;
 
 /* Pilarna */
 .fika-arrow {
-  display: inline-block;
+  display: flex;
+  justify-items: end;
   margin-top: 0.5rem;
 }
 
-.fika-arrow img {
-  display: block;
-  width: 1.5rem;
-  height: auto;
-}/* Bara själva korten */
+/* Bara själva korten */
 .fika,
 .shop,
 .create {
@@ -243,6 +242,8 @@ display: block;
 
 /*CREATION GENERATOR*/
 .creation-generator {
+  display: flexbox;
+  justify-content: space-between;
   height: 91px;
   padding: 10px;
   background-color: #e0d7e4;
@@ -253,7 +254,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding:
   gap: 5px;
   color: #ffffff;
   background-color: #253b2f;
@@ -269,6 +270,6 @@ footer {
 }
 
 .logo-footer {
-  height:80px;
+  height:60px;
   width:auto;
 }
