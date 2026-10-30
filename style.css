@@ -373,9 +373,10 @@ hr {
 /*CREATION GENERATOR*/
 .creation-generator {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 91px;
-  padding: 10px 40px 10px 20px;
+  padding: 10px 40px 10px 50px;
   background-color: #e0d7e4;
 }
 
@@ -394,9 +395,18 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   color: #ffffff;
   background-color: #253b2f;
+}
+
+.logo-footer {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+footer p {
+  margin: 0.2rem;
+  padding: 0.3rem;
 }
 
 .footer-leaf,
