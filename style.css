@@ -257,77 +257,98 @@ hr {
 
 /*HITTA DIN PYSSELSTUND - KNAPPAR (m-button1 är i samma som hero-knapparna*/
 
-.meeting-buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem;
-  font-weight: 700;
-  gap: 0.5rem;
-}
-
-.m-button1 {
-  background-color: #954822;
-  border: solid #954822 2.5px;
-  color: white;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  text-decoration: none;
-}
-
-.m-button2,
-.m-button3 {
-  border: solid 2.5px #e0e3d3;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  color: #000000;
-  background-color: #e0e3d3;
-  text-decoration: none;
-}
-
 /* Hela avdelningen */
 .meetings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 1rem;
 }
 
-h3 {
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
+.meetings > h2 {
+  margin: 0 0 0.5rem;
 }
 
-/* Ett träffkort */
-.meeting {
+/* Kategoriknappar */
+.meeting-buttons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.m-button1,
+.m-button2,
+.m-button3 {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #954822;
+  border-radius: 1.5rem;
+  color: #954822;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.meeting-buttons .m-button1 {
+  background-color: #954822;
+  color: #ffffff;
+}
+
+/* Placeringen av korten */
+.meeting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Bild och text inuti varje kort */
+.meeting {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  align-items: start;
   gap: 1rem;
   padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #faf5eb;
   border: 1px solid #c3b79e;
   border-radius: 0.5rem;
+  background-color: #faf5eb;
 }
 
-/* Fotografiet i kortet */
-.meeting img {
-  width: 6rem;
-  height: auto;
-  flex-shrink: 0;
+.meeting > img {
   display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
 }
 
-.meeting p {
-  padding: 0;
+/* Kortets textgrupp */
+.meeting-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.meeting-content h3,
+.meeting-content p {
   margin: 0;
 }
 
-/* Textgruppen får kunna krympa */
-.meeting > div {
-  min-width: 0;
+.meeting-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  font-size: 0.875rem;
+}
+
+.meeting-description {
+  line-height: 1.5;
+}
+
+/* Två kort bredvid varandra på större skärmar */
+@media (min-width: 48rem) {
+  .meeting-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /*CREATION GENERATOR*/
