@@ -372,19 +372,29 @@ hr {
 
 /*CREATION GENERATOR*/
 .creation-generator {
-  display: flexbox;
+  display: flex;
   justify-content: space-between;
   height: 91px;
-  padding: 10px;
+  padding: 10px 40px 10px 20px;
   background-color: #e0d7e4;
+}
+
+.bottom-flower {
+  width: 80px;
+  height: auto;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /*FOOTER*/
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   color: #ffffff;
   background-color: #253b2f;
 }
