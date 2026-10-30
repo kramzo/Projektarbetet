@@ -344,6 +344,25 @@ hr {
   line-height: 1.5;
 }
 
+.meeting-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  border: 1px solid #954822;
+  border-radius: 1.5rem;
+  background-color: #954822;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.meeting-arrow {
+  width: 20px;
+  height: auto;
+}
+
 /* Två kort bredvid varandra på större skärmar */
 @media (min-width: 48rem) {
   .meeting-grid {
