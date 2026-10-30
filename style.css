@@ -26,7 +26,7 @@ header {
 
 .logo-image {
   justify-self: start;
-  width: 3rem;
+  width: 70px;
   height: auto;
 }
 
@@ -45,6 +45,11 @@ header {
   color: #ffffff;
 }
 
+.dot{
+    content: " &bull";   
+    color: #E48658;
+}
+
 .logo p {
   margin: 0;
   font-size: 1rem;
@@ -54,7 +59,6 @@ h1 {
   font-size: 2rem;
   margin: 0;
   padding: 2rem 1rem 0rem 1rem;
-
 }
 
 main {
@@ -69,12 +73,12 @@ h2 {
 
 /**HERO**/
 .hero-content {
-display: grid;
-grid-template-columns: 19rem;
-grid-template-rows: 1fr;
-padding: 20px;
-margin: 0;
-background-color: #faf5eb;
+  display: grid;
+  grid-template-columns: 19rem;
+  grid-template-rows: 1fr;
+  padding: 20px;
+  margin: 0;
+  background-color: #faf5eb;
 }
 
 .hero p {
@@ -87,7 +91,7 @@ background-color: #faf5eb;
   position: absolute;
   top: 6rem;
   right: 1rem;
-  width:90px;
+  width: 90px;
   height: auto;
 }
 
@@ -109,12 +113,10 @@ background-color: #faf5eb;
   gap: 10px;
 }
 
-
 .button-arrow {
   width: 20px;
   height: auto;
 }
-
 
 .hero-button {
   font-size: 15px;
@@ -128,13 +130,13 @@ background-color: #faf5eb;
 
 .hero-button-secondary {
   background-color: transparent;
-  color:#954822;
+  color: #954822;
 }
 
 .hero-image {
-display: block;
-  width:100%;
-  height:auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /**LINJE**/
@@ -143,12 +145,11 @@ display: block;
   padding: 1rem;
   display: flex;
   align-items: center;
-  gap:10px;
-
+  gap: 10px;
 }
 
 hr {
-  border:#954822 1px solid;
+  border: #954822 1px solid;
   width: 10rem;
 }
 
@@ -156,9 +157,7 @@ hr {
   width: 2.5rem;
   height: auto;
   image-rendering: auto;
-  
 }
-
 
 /**CARDS**/
 
@@ -171,7 +170,6 @@ hr {
   stroke: #954822;
   width: 5rem;
 }
-
 
 /* Bara själva korten */
 .fika,
@@ -189,7 +187,7 @@ hr {
 /* Ikonerna i korten */
 .mushroom,
 .cake,
-.yarn, {
+.yarn {
   display: block;
   width: 100%;
   height: auto;
@@ -230,8 +228,6 @@ hr {
   border-radius: 7px;
 }
 
-
-
 /* Ikonerna i korten */
 .mushroom,
 .cake,
@@ -256,7 +252,7 @@ hr {
 /* Pilarna */
 .fika-arrow {
   display: flexbox;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 /*HITTA DIN PYSSELSTUND - KNAPPAR (m-button1 är i samma som hero-knapparna*/
@@ -279,9 +275,9 @@ hr {
   text-decoration: none;
 }
 
-
-.m-button2, .m-button3 {
-  border: solid 2.5px #e0e3d3E;
+.m-button2,
+.m-button3 {
+  border: solid 2.5px #e0e3d3;
   border-radius: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   color: #000000;
@@ -298,11 +294,10 @@ hr {
 }
 
 h3 {
-font-weight: 600;  
-padding: 0;
+  font-weight: 600;
+  padding: 0;
   margin: 0;
 }
-
 
 /* Ett träffkort */
 .meeting {
@@ -325,11 +320,9 @@ padding: 0;
   display: block;
 }
 
-
-
 .meeting p {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* Textgruppen får kunna krympa */
@@ -339,7 +332,6 @@ margin: 0;
 
 /*CREATION GENERATOR*/
 .creation-generator {
-
   display: flexbox;
   justify-content: space-between;
   height: 91px;
@@ -352,22 +344,22 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:
   gap: 5px;
   color: #ffffff;
   background-color: #253b2f;
 }
 
-.footer-leaf, .footer-leaf2 {
+.footer-leaf,
+.footer-leaf2 {
   height: 20px;
   width: auto;
 }
 
 .footer-leaf2 {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .logo-footer {
-  height:60px;
-  width:auto;
+  height: 60px;
+  width: auto;
 }
