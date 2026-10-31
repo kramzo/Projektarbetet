@@ -141,16 +141,20 @@ h2 {
 
 /**LINJE**/
 
-.decoration-line {
-  border: 0;
-  height: 1px;
-  width: 10rem;
-  background-color: #954822;
+/* Föräldern placerar linje, svamp och linje bredvid varandra */
+.lines {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
 }
 
-hr {
-  border: #954822 1px solid;
-  width: 10rem;
+.decoration-line {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  background-color: #954822;
+  border-radius: 999px;
 }
 
 .hr-mushroom {
