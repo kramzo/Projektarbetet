@@ -16,7 +16,6 @@ p {
 header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  justify-content: 1fr auto 1fr;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
@@ -161,58 +160,6 @@ hr {
 
 /**CARDS**/
 
-.mushroom,
-.cake,
-.yarn {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  stroke: #954822;
-  width: 5rem;
-}
-
-/* Bara själva korten */
-.fika,
-.shop,
-.create {
-  display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
-  align-items: center;
-  gap: 1rem;
-  border: 2px solid #e0e3d3;
-  background-color: #e0e3d3;
-  border-radius: 7px;
-}
-
-/* Ikonerna i korten */
-.mushroom,
-.cake,
-.yarn {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  stroke: #954811;
-}
-
-/* Rubrik och beskrivning */
-.cards h4 {
-  margin: 0 0 0.3rem;
-}
-
-.cards p {
-  margin: 0;
-}
-
-/* Pilarna */
-.fika-arrow {
-  display: flex;
-  justify-items: end;
-  margin-top: 0.5rem;
-}
-
 /* Bara själva korten */
 .fika,
 .shop,
@@ -233,11 +180,12 @@ hr {
 .cake,
 .yarn {
   display: block;
-  width: 100%;
+  width: 5rem;
   height: auto;
   margin: 0;
   padding: 0;
   border: 0;
+  stroke: #954822;
 }
 
 /* Rubrik och beskrivning */
@@ -251,11 +199,12 @@ hr {
 
 /* Pilarna */
 .fika-arrow {
-  display: flexbox;
+  display: flex;
   justify-content: flex-end;
+  margin-top: 0.5rem;
 }
 
-/*HITTA DIN PYSSELSTUND - KNAPPAR (m-button1 är i samma som hero-knapparna*/
+/*HITTA DIN PYSSELSTUND - KNAPPAR*/
 
 /* Hela avdelningen */
 .meetings {
