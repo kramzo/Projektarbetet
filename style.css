@@ -73,7 +73,7 @@ h2 {
 /**HERO**/
 .hero-content {
   display: grid;
-  grid-template-columns: 19rem;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr;
   padding: 20px;
   margin: 0;
@@ -369,6 +369,7 @@ footer {
 footer p {
   margin: 0.2rem;
   padding: 0.3rem;
+   white-space: nowrap;
 }
 
 .footer-leaf,
@@ -382,6 +383,6 @@ footer p {
 }
 
 .logo-footer {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
