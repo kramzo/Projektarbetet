@@ -1,5 +1,9 @@
+/*-------------*/
+/*--GEMENSAMT--*/
+/*-------------*/
+
 * {
-  box-sizing: border-box; /**Väljer alla HTML-element och betyder att padding och kant räknas in i den bredd ovh höjd jag angett**/
+  box-sizing: border-box; /* Padding och kant räknas in i angiven bredd och höjd. */
 }
 
 body {
@@ -10,12 +14,31 @@ body {
   margin: 0;
 }
 
-/** <weight>: Use a value from 100 to 900 **/
-/** <uniquifier>: Use a unique and descriptive class name **/
-
 p {
   font-weight: 400;
 }
+
+h1 {
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 2rem 2rem 0rem 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+main {
+  background-color: #faf5eb;
+}
+
+/* HEADER */
 
 header {
   display: grid;
@@ -57,307 +80,8 @@ header {
   font-size: 1rem;
 }
 
-h1 {
-  font-size: 2.3rem;
-  margin: 0;
-  padding: 2rem 2rem 0rem 1rem;
-}
+/* FOOTER */
 
-main {
-  background-color: #faf5eb;
-}
-
-h2 {
-  font-size: 1.3rem;
-  margin: 0;
-}
-
-/**HERO**/
-.hero-content {
-  display: grid;
-  grid-template-columns: 100%;
-  padding: 20px;
-  margin: 0;
-  position: relative;
-  background-color: #faf5eb;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0.5rem 1rem 1rem 1rem;
-}
-
-.hero-corner-leaf {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  width: 90px;
-  height: auto;
-  pointer-events: none; /**Gör att klick går igenom lövbilden så att det inte överlappar annat innehåll, t.ex. en länk**/
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  font-weight: bold;
-  align-items: center;
-  margin: 0;
-  padding: 1rem;
-}
-
-.button-arrow {
-  width: 20px;
-  height: auto;
-}
-
-.hero-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  font-size: 15px;
-  background-color: #954822;
-  border: 2.5px solid #954822;
-  color: white;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  text-decoration: none;
-}
-
-.hero-button-secondary {
-  background-color: transparent;
-  color: #954822;
-}
-
-.hero-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/**LINJE**/
-
-/* Föräldern placerar linje, svamp och linje bredvid varandra */
-.lines {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 1rem;
-}
-
-.decoration-line {
-  flex: 1;
-  min-width: 0;
-  height: 1px;
-  background-color: #954822;
-  border-radius: 999px;
-}
-
-.hr-mushroom {
-  width: 2.5rem;
-  height: auto;
-  image-rendering: auto;
-}
-
-/**CARDS**/
-
-/* Bara själva korten */
-.fika,
-.shop,
-.create {
-  display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
-  align-items: center;
-  gap: 1rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  border: 2px solid #e0e3d3;
-  background-color: #e0e3d3;
-  border-radius: 7px;
-}
-
-/* Ikonerna i korten */
-.mushroom,
-.cake,
-.yarn {
-  display: block;
-  width: 5rem;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* Rubrik och beskrivning */
-.cards h2 {
-  margin: 0 0 0.3rem;
-}
-
-.cards p {
-  margin: 0;
-}
-
-/* Pilarna */
-.fika-arrow {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-}
-
-/*HITTA DIN PYSSELSTUND - KNAPPAR*/
-
-/* Hela avdelningen */
-.meetings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.meetings > h2 {
-  margin: 0 0 0.5rem;
-}
-
-/* Kategoriknappar */
-.meeting-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.m-button1,
-.m-button2,
-.m-button3 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-  border: 1px solid #954822;
-  border-radius: 1.5rem;
-  color: #954822;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.meeting-buttons .m-button1 {
-  background-color: #954822;
-  color: #ffffff;
-}
-
-/* Placeringen av korten */
-.meeting-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  width: 100%;
-}
-
-/* Bild och text inuti varje kort */
-.meeting {
-  display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
-  align-items: start;
-  gap: 1rem;
-  padding: 1rem;
-  border: 1px solid #c3b79e;
-  border-radius: 0.5rem;
-  background-color: #faf5eb;
-}
-
-.meeting > img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0.3rem;
-}
-
-/* Kortets textgrupp */
-.meeting-content {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  align-items: center;
-  gap: 0.5rem;
-  min-width: 0;
-}
-
-.meeting-content h3,
-.meeting-content p {
-  margin: 0;
-}
-
-.meeting-content h3 {
-  grid-column: span 2; /* Headern spannar över båda vänster och höger sidan längst upp*/
-}
-
-.meeting-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem 1rem;
-  font-size: 0.875rem;
-  grid-column: 1; /*Låser texten till vänster*/
-}
-
-.meeting-description {
-  line-height: 1.5;
-}
-
-.meeting-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem; /*Stramare gap inuti knappen för mobilversion*/
-  padding: 0.4rem 0.8rem; /*Mindre padding för att förhindra horisontell squishing*/
-  color: #ffffff;
-  border: 1px solid #954822;
-  border-radius: 1.5rem;
-  background-color: #954822;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem; /*Mindre typsnitt för att passa i mobilskärm*/
-  grid-column: 2; /*Flyttar knappen till högra "spåret"*/
-  grid-row: 2;
-  justify-self: end;
-}
-
-.meeting-arrow {
-  width: 16px;
-  height: auto;
-}
-
-/* Två kort bredvid varandra på större skärmar */
-@media (min-width: 48rem) {
-  .meeting-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/*CREATION GENERATOR*/
-.creation-generator {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 91px;
-  padding: 10px 40px 10px 50px;
-  background-color: #e0d7e4;
-}
-
-.bottom-flower {
-  width: 95px;
-  height: auto;
-}
-
-h4 {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-/*FOOTER*/
 footer {
   display: flex;
   flex-direction: row;
@@ -403,3 +127,302 @@ footer p {
   width: 1.5rem;
   height: auto;
 }
+
+
+/*--------------*/
+/*--STARTSIDAN--*/
+/*--------------*/
+
+/* HERO */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background-color: #faf5eb;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.hero-corner-leaf {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 90px;
+  height: auto;
+  pointer-events: none; /* Klick går igenom bilden till innehållet bakom. */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  font-weight: bold;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.button-arrow {
+  width: 20px;
+  height: auto;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 15px;
+  background-color: #954822;
+  border: 2.5px solid #954822;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  color: #954822;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* DEKORATIV AVDELARE */
+
+.lines {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.decoration-line {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  background-color: #954822;
+  border-radius: 999px;
+}
+
+.hr-mushroom {
+  width: 2.5rem;
+  height: auto;
+  image-rendering: auto;
+}
+
+/* GENVÄGSKORT */
+
+.fika,
+.shop,
+.create {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #e0e3d3;
+  background-color: #e0e3d3;
+  border-radius: 7px;
+}
+
+/* Ikonerna i korten */
+
+.mushroom,
+.cake,
+.yarn {
+  display: block;
+  width: 5rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Rubrik och beskrivning */
+
+.cards h2 {
+  margin: 0 0 0.3rem;
+}
+
+.cards p {
+  margin: 0;
+}
+
+/* Pilarna */
+
+.fika-arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+/* HITTA DIN PYSSELSTUND */
+
+.meetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.meetings > h2 {
+  margin: 0 0 0.5rem;
+}
+
+/* Kategoriknappar */
+
+.meeting-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.m-button1,
+.m-button2,
+.m-button3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #954822;
+  border-radius: 1.5rem;
+  color: #954822;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.meeting-buttons .m-button1 {
+  background-color: #954822;
+  color: #ffffff;
+}
+
+/* Placeringen av korten */
+
+.meeting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Bild och text inuti varje kort */
+
+.meeting {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #c3b79e;
+  border-radius: 0.5rem;
+  background-color: #faf5eb;
+}
+
+.meeting > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+/* Kortets textgrupp */
+
+.meeting-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.meeting-content h3,
+.meeting-content p {
+  margin: 0;
+}
+
+.meeting-content h3 {
+  grid-column: span 2; /* Rubriken sträcker sig över båda kolumnerna. */
+}
+
+.meeting-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem 1rem;
+  font-size: 0.875rem;
+  grid-column: 1; /* Placerar detaljerna i vänsterkolumnen. */
+}
+
+.meeting-description {
+  line-height: 1.5;
+}
+
+.meeting-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  color: #ffffff;
+  border: 1px solid #954822;
+  border-radius: 1.5rem;
+  background-color: #954822;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+
+.meeting-arrow {
+  width: 16px;
+  height: auto;
+}
+
+/* Två kort bredvid varandra på större skärmar */
+
+@media (min-width: 48rem) {
+  .meeting-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* IDÉGENERATOR */
+
+.creation-generator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 91px;
+  padding: 10px 40px 10px 50px;
+  background-color: #e0d7e4;
+}
+
+.bottom-flower {
+  width: 95px;
+  height: auto;
+}
+
+
+/*----------------*/
+/*--KONTAKTSIDAN--*/
+/*----------------*/
+
+/* Kontaktsidans CSS lägger vi här. */
