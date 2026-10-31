@@ -324,9 +324,10 @@ hr {
 
 /* Kortets textgrupp */
 .meeting-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
   gap: 0.75rem;
   min-width: 0;
 }
@@ -359,6 +360,10 @@ hr {
   background-color: #954822;
   text-decoration: none;
   font-weight: 600;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  justify-self: end;
+  align-self: center;
 }
 
 .meeting-arrow {
