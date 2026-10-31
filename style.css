@@ -325,16 +325,20 @@ hr {
 /* Kortets textgrupp */
 .meeting-content {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   min-width: 0;
 }
 
 .meeting-content h3,
 .meeting-content p {
   margin: 0;
+}
+
+.meeting-content h3 {
+  grid-column: span 2;
 }
 
 .meeting-details {
@@ -360,10 +364,10 @@ hr {
   background-color: #954822;
   text-decoration: none;
   font-weight: 600;
-  grid-column: 1;
-  grid-row: auto;
+  grid-column: 2;
+  grid-row: 2;
   justify-self: end;
-  align-self: 0.25rem;
+  align-self: center;
 }
 
 .meeting-arrow {
