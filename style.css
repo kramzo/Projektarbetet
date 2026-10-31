@@ -76,7 +76,6 @@ h2 {
 .hero-content {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr;
   padding: 20px;
   margin: 0;
   position: relative;
