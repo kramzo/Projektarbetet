@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; /**Väljer alla HTML-element och betyder att padding och kant räknas in i den bredd ovh höjd jag angett**/
+}
+
 body {
   font-family: "Petrona", serif;
   font-optical-sizing: auto;
