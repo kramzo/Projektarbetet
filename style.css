@@ -128,7 +128,6 @@ footer p {
   height: auto;
 }
 
-
 /*--------------*/
 /*--STARTSIDAN--*/
 /*--------------*/
@@ -420,9 +419,64 @@ footer p {
   height: auto;
 }
 
-
 /*----------------*/
 /*--KONTAKTSIDAN--*/
 /*----------------*/
 
 /* Kontaktsidans CSS lägger vi här. */
+
+.contact-page {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.contact-page h1 {
+  padding: 1rem;
+}
+
+.contact-page input,
+.contact-page textarea {
+  border: 1px solid #c3b79e;
+}
+
+.form-field,
+.message-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.form-field input,
+.message-field textarea {
+  font-size: 1rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
+
+.message-field textarea {
+  height: 10rem;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 1rem;
+}
+
+
+.submit input {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  margin: 0;
+  border: 1px solid #954822;
+  border-radius: 0.8rem;
+  background-color: #954822;
+  color:#ffffff;
+}
