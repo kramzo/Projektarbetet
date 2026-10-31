@@ -254,6 +254,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  width: 100%;
 }
 
 /* Bild och text inuti varje kort */
