@@ -55,9 +55,9 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin: 0;
-  padding: 2rem 1rem 0rem 1rem;
+  padding: 2rem 2rem 0rem 1rem;
 }
 
 main {
@@ -77,19 +77,21 @@ h2 {
   grid-template-rows: 1fr;
   padding: 20px;
   margin: 0;
+  position: relative;
   background-color: #faf5eb;
 }
 
 .hero p {
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: ;
   margin: 0;
   padding: 0.5rem 1rem 1rem 1rem;
 }
 
 .hero-corner-leaf {
   position: absolute;
-  top: 6.5rem;
-  right: 1rem;
+  top: 0.8rem;
+  right: 0.8rem;
   width: 90px;
   height: auto;
 }
