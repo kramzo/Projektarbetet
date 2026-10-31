@@ -94,6 +94,7 @@ h2 {
   right: 0.8rem;
   width: 90px;
   height: auto;
+  pointer-events: none; /**Gör att klick går igenom lövbilden så att det inte överlappar annat innehåll, t.ex. en länk**/
 }
 
 .buttons {
@@ -107,22 +108,20 @@ h2 {
   padding: 1rem;
 }
 
-.hero-button-primary {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-
 .button-arrow {
   width: 20px;
   height: auto;
 }
 
 .hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   font-size: 15px;
   background-color: #954822;
-  border: solid #954822 2.5px;
+  border: 2.5px solid #954822;
   color: white;
   border-radius: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
@@ -142,11 +141,11 @@ h2 {
 
 /**LINJE**/
 
-.lines {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.decoration-line {
+  border: 0;
+  height: 1px;
+  width: 10rem;
+  background-color: #954822;
 }
 
 hr {
