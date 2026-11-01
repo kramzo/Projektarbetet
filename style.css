@@ -348,6 +348,16 @@ footer p {
   margin: 1rem 0;
 }
 
+.meeting-buttons a {
+  transition: transform 0.2s;
+}
+
+
+.meeting-buttons a:hover,
+.meeeting-buttons a:focus-visible {
+  transform: translateY(-3px);
+}
+
 .m-button1,
 .m-button2,
 .m-button3 {
@@ -552,10 +562,11 @@ footer p {
   .menu {
     display: block;
     width: auto;
+    grid-column: 3;
   }
 
   .menu ul {
-    display: flex;
+    flex-direction: row;
     gap: 20px;
   }
 }
