@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: #faf5eb;
   font-family: "Petrona", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -34,9 +35,6 @@ h4 {
   font-size: 20px;
 }
 
-main {
-  background-color: #faf5eb;
-}
 
 /* HEADER */
 
@@ -493,6 +491,12 @@ footer p {
 
 .contact-page {
   display: grid;
+  grid-template-columns: minmax(0, 1fr); /* Kom ihåg! minmax(0, 1fr) gör att kolumnen
+   kan krympa utan att lång text tvingar den bli bredare (0) och (1fr) låter kolumnen
+   fylla tillgänligt utrymme.*/
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto; 
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
