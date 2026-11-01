@@ -48,6 +48,7 @@ header {
   padding: 1rem;
   color: #ffffff;
   background-color: #253b2f;
+  text-decoration: none;
 }
 
 .logo-image {
@@ -78,6 +79,22 @@ header {
 .logo p {
   margin: 0;
   font-size: 1rem;
+}
+
+
+nav {
+
+}
+
+
+nav a, ul, li {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  gap: 5rem;
+  color: #ffffff;
 }
 
 /* FOOTER */
@@ -127,6 +144,7 @@ footer p {
   width: 1.5rem;
   height: auto;
 }
+
 
 /*--------------*/
 /*--STARTSIDAN--*/
