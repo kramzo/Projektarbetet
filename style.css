@@ -528,13 +528,26 @@ footer p {
   height: 10rem;
 }
 
-.submit {
+.contact-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  gap:30px;
   justify-content: end;
   padding: 1rem;
 }
 
+.reset input {
+    font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  margin: 0;
+  border: 1px solid #954822;
+  border-radius: 0.8rem;
+  color:#954822;  
+  background-color: transparent;
+;
+}
 
 .submit input {
   font-size: 1rem;

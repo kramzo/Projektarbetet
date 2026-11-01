@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
 
     <title>Kontakt | Korp & Koppar</title>
   </head>
@@ -27,7 +28,7 @@
         </p>
       </div>
 
-      <!--NAVIGERING-->      
+      <!--NAVIGERING-->
 
       <button class="menu-toggle">☰</button>
       <nav class="menu">
@@ -38,7 +39,6 @@
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-
     </header>
 
     <!-- KONTAKTFORMULÄR, HITTA HIT-->
@@ -55,7 +55,9 @@
         <p>Har du frågor om caféet, butiken eller våra pysselträffar?</p>
 
         <!-- Kontaktformuläret-->
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
+
+
           <div class="form-field">
             <label for="name">Namn</label>
             <input
@@ -67,7 +69,7 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="form-field"> <!--epostfältet-->
             <label for="email">E-post</label>
             <input
               type="email"
@@ -78,25 +80,25 @@
             />
           </div>
 
-          <div class="message-field">
+          <div class="message-field"> <!--Meddelandefält-->
             <label for="message">Meddelande</label>
             <textarea id="message" name="message" rows="4" cols="20"></textarea>
-            
-
           </div>
 
-            <div class="submit">
-              <input
-                type="submit"
-                value="Skicka in">
-        
-            </div>
+          <div class="contact-buttons">
+          <div class="submit"> <!-- SUBMIT knapp-->
+            <input type="submit" value="Skicka in" />
+          </div>
 
-<div class="reset">
-      <input type="reset" value="Återställ" />
-</div>
-
+          <div class="reset"> <!--RESET knapp-->
+            <input type="reset" value="Återställ" />
+          </div>
+          </div>
         </form>
+
+        <div class="error-list">
+<p></p>
+        </div>
       </section>
     </main>
 

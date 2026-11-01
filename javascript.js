@@ -4,62 +4,66 @@ console.log("JavaScript är laddat");
 
 /* Hämta första fältgruppen */
 
-/*HÄMTAT FORMULÄR*/
-const contactForm = document.querySelector("#contact-form"); /*Formulärets form-element*/
+/*HÄMTAT FORMULÄRINNEHÅLL*/
+const contactForm = document.querySelector("#contact-form"); /*Hela formuläret*/
+
+const nameInput = document.querySelector("#name"); /*Formulär: Namn, inmatningsfält*/
+const emailInput = document.querySelector("#email"); /*Formulär: Email, inmatningsfält*/
+const messageInput = document.querySelector("#message"); /*Formulär: Meddelandefält, inmatningsfält*/
+
+const errorList = document.querySelector(".error-list"); /*Formulär: Visa felmeddelande*/
+
+const submitForm = document.querySelector("#submit"); /*Formulär: Submit-knapp*/
+
+/*En funktion som visar felmeddelanden*/
+
+// errorList.textContent ="Här kommer felmeddelande att visas."
 
 
-const nameInput = document.querySelector("#name"); /*Formulär: Namn*/
-const emailInput = document.querySelector("#email"); /*Formulär: Email*/
-const messageInput = document.querySelector("#message"); /*Formulär: Meddelandefält*/
 
-
-
-
-// Array som används för felmeddelanden
-let errors = [];
-
-// Array som innehåller sparad historik
-let history = [];
-
-/**
- * Validerar formulärets inmatning.
- * @returns {boolean}
- */
-function validateForm() {
-  errors = [];
-
-  
 // Kontrollera formulärets obligatoriska fält
 const name = nameInput.value.trim();
 const email = emailInput.value.trim();
 const message = messageInput.value.trim();
 
 
+
+/*En funktion som samlar det som blivit fel och körs om fälten är tomma*/
+
+contactForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+
+
+  errorList.textContent = "";
+
   if (name === "") {
-    errors.push("Namn saknas.");
-  }
+    errorList.textContent = "Namn saknas. Vänligen fyll i namn.";
+
 
   if (email === "") {
-    errors.push("E-mail saknas.");
+    errorList.textContent = "E-mail saknas. Vänligen fyll i e-postadress.";
+
+
+  if (message === "") {
+    errorList.textContent = "Meddelandefältet tomt. Vänligen fyll i meddelande.";
+  
+  }}}}
+);
+
+
+/*
+  if (email === "") {
+    errorList.textContent("E-mail saknas.");
   }
 
   if (message === "") {
-    errors.push("Meddelandefält tomt. Vänligen fyll i fältet.");
+    errorList.textContent("Meddelandefält tomt. Vänligen fyll i fältet.");
   }
-
-//Visa eventuella felmeddelanden
-  displayErrors();
-
-//Returnera resultatet (true eller false) av valideringen
-return error
-
-const filledForm = {
-  name: name,
-  email: email,
-  message: message,
-};
-
-
+*/
 
 
 
@@ -99,7 +103,7 @@ const filledForm = {
 
 
 
-/*Hämta fältet och spara texten i en variabel*/
+/*Hämta fältet och spara texten i en variabel*
 if (contactForm) {
   contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -108,7 +112,7 @@ if (contactForm) {
 }
 
 
-/*Animerad navigation*/
+/*Animerad navigation*
 
 menuClick.addEventListener("click", function(){
   menu.classList.toggle("change");
@@ -117,8 +121,8 @@ menuClick.addEventListener("click", function(){
 
 
 
-/*PYSSELSTUND*/
-const meetingButton = document.querySelector(".meeting-link"); /*Läs mer-knapp*/
+/*PYSSELSTUND*
+const meetingButton = document.querySelector(".meeting-link"); /*Läs mer-knapp*
 
 
 
@@ -127,7 +131,7 @@ const meetingButton = document.querySelector(".meeting-link"); /*Läs mer-knapp*
 /*
 menuButton.addEventListener("click", function(){
    menu.classList.toggle("open");
-  */
+  *
 
-const menuButton = document.querySelector(".menu-toggle"); /*Navigeringens menyknapp*/
-const menu =document.querySelector(".menu"); /*Navigeringsmenyn*/
+const menuButton = document.querySelector(".menu-toggle"); /*Navigeringens menyknapp
+const menu =document.querySelector(".menu"); /*Navigeringsmenyn */
