@@ -43,32 +43,24 @@ contactForm.addEventListener("submit", function(event) {
   errorList.textContent = "";
 
   if (name === "") { //Det här görs om namnetfältet är tomt.
-    errorList.textContent = "Namn saknas. Vänligen fyll i namn.";
+    errors.push("Namn saknas. Vänligen fyll i namn."); //'push' sätter objektet sist i arrayen.
   }
 
   if (email === "") { //Det här görs om emailfältet är tomt.
-    errorList.textContent = "E-mail saknas. Vänligen fyll i e-postadress.";
+    errors.push("E-mail saknas. Vänligen fyll i e-postadress.");
   
    } else if (!email.includes("@")) {
 
-    errorList.textContent = "Fyll i giltig e-mailadress."
+    errors.push("Fyll i giltig e-mailadress.")
   
   }
 
   if (message === "") { //Det här görs om meddelandefältet är tomt.
-    errorList.textContent = "Meddelandefältet tomt. Vänligen fyll i meddelande.";
+    errors.push("Meddelandefältet tomt. Vänligen fyll i meddelande.");
   }
+
+  errorList.textContent = errors.join(" "); //join(" ") säter ihop meddelandena till en text med mellanslag mellan dem
 });
-
-/*
-  if (email === "") {
-    errorList.textContent("E-mail saknas.");
-  }
-
-  if (message === "") {
-    errorList.textContent("Meddelandefält tomt. Vänligen fyll i fältet.");
-  }
-*/
 
 
 
