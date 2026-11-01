@@ -31,29 +31,34 @@ const message = messageInput.value.trim();
 /*En funktion som samlar det som blivit fel och körs om fälten är tomma*/
 
 contactForm.addEventListener("submit", function(event) {
+  // Alla kontroller ligger här inne.
   event.preventDefault();
 
-  const name = nameInput.value.trim();
+  const name = nameInput.value.trim(); //Hämtar värdet och tar bort blanksteg
   const email = emailInput.value.trim();
   const message = messageInput.value.trim();
 
+  const errors = []; //En tom array för att samla felmeddelanden
 
   errorList.textContent = "";
 
-  if (name === "") {
+  if (name === "") { //Det här görs om namnetfältet är tomt.
     errorList.textContent = "Namn saknas. Vänligen fyll i namn.";
+  }
 
-
-  if (email === "") {
+  if (email === "") { //Det här görs om emailfältet är tomt.
     errorList.textContent = "E-mail saknas. Vänligen fyll i e-postadress.";
-
-
-  if (message === "") {
-    errorList.textContent = "Meddelandefältet tomt. Vänligen fyll i meddelande.";
   
-  }}}}
-);
+   } else if (!email.includes("@")) {
 
+    errorList.textContent = "Fyll i giltig e-mailadress."
+  
+  }
+
+  if (message === "") { //Det här görs om meddelandefältet är tomt.
+    errorList.textContent = "Meddelandefältet tomt. Vänligen fyll i meddelande.";
+  }
+});
 
 /*
   if (email === "") {
