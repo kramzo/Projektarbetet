@@ -13,10 +13,6 @@ const messageInput = document.querySelector("#message"); /*Formulär: Meddelande
 
 const errorList = document.querySelector(".error-list"); /*Formulär: Visa felmeddelande*/
 
-const submitForm = document.querySelector("#submit"); /*Formulär: Submit-knapp*/
-
-/*En funktion som visar felmeddelanden*/
-
 // errorList.textContent ="Här kommer felmeddelande att visas."
 
 
@@ -62,73 +58,7 @@ contactForm.addEventListener("submit", function(event) {
   errorList.textContent = errors.join(" "); //join(" ") säter ihop meddelandena till en text med mellanslag mellan dem
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------------------------*/
-
-
-
-
-
-/*Hämta fältet och spara texten i en variabel*
-if (contactForm) {
-  contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const message = messageInput.value;
-  });
-}
-
-
-/*Animerad navigation*
-
-menuClick.addEventListener("click", function(){
-  menu.classList.toggle("change");
-  menu.classList("open");
-})
-
-
-
-/*PYSSELSTUND*
-const meetingButton = document.querySelector(".meeting-link"); /*Läs mer-knapp*
-
-
-
-
-
-/*
-menuButton.addEventListener("click", function(){
-   menu.classList.toggle("open");
-  *
-
-const menuButton = document.querySelector(".menu-toggle"); /*Navigeringens menyknapp
-const menu =document.querySelector(".menu"); /*Navigeringsmenyn */
+/*Kom som återställer meddelandefältet*/
+contactForm.addEventListener("reset", function() {
+  errorList.textContent = "";
+});
