@@ -181,6 +181,11 @@ footer p {
   height: auto;
 }
 
+.welcome-and-leaves {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
 
 /*--------------*/
 /*--STARTSIDAN--*/
@@ -586,4 +591,21 @@ footer p {
     flex-direction: row;
     gap: 20px;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .social-links {
+    gap: 3rem;
+  }
+
+  .welcome-and-leaves {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  }
+
 }
