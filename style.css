@@ -366,9 +366,8 @@ footer p {
   transition: transform 0.2s;
 }
 
-
 .meeting-buttons a:hover,
-.meeeting-buttons a:focus-visible {
+.meeting-buttons a:focus-visible {
   transform: translateY(-3px);
 }
 
@@ -476,7 +475,6 @@ footer p {
 }
 
 /* Två kort bredvid varandra på större skärmar */
-
 @media (min-width: 48rem) {
   .meeting-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -503,13 +501,9 @@ footer p {
 /*--KONTAKTSIDAN--*/
 /*----------------*/
 
-/* Kontaktsidans CSS lägger vi här. */
-
 .contact-page {
   display: grid;
-  grid-template-columns: minmax(0, 1fr); /* Kom ihåg! minmax(0, 1fr) gör att kolumnen
-   kan krympa utan att lång text tvingar den bli bredare (0) och (1fr) låter kolumnen
-   fylla tillgänligt utrymme.*/
+  grid-template-columns: minmax(0, 1fr); 
   width: 100%;
   max-width: 40rem;
   margin: 0 auto; 
@@ -551,42 +545,44 @@ footer p {
 .contact-buttons {
   display: flex;
   flex-direction: row-reverse;
-  gap:30px;
+  gap: 30px;
   justify-content: end;
   padding: 1rem;
 }
 
 .reset input {
-    font-size: 1rem;
+  font-size: 1rem;
   font-family: inherit;
   font-weight: 600;
-  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  padding: 0.3rem 0.7rem;
   margin: 0;
   border: 1px solid #954822;
   border-radius: 0.8rem;
-  color:#954822;  
+  color: #954822;  
   background-color: transparent;
-;
 }
 
 .submit input {
   font-size: 1rem;
   font-family: inherit;
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   margin: 0;
   border: 1px solid #954822;
   border-radius: 0.8rem;
   background-color: #954822;
-  color:#ffffff;
+  color: #ffffff;
 }
 
+/* Default Mobile-First State: Dölj på mobiler */
+.desktop-only {
+  display: none;
+}
 
 /*-----------------*/
 /*--MEDIA-QUERIES--*/
 /*-----------------*/
 
-
-/*Navigeringsmenyn/hamburgermeny för stora skärmar*/
+/* Navigeringsmenyn/hamburgermeny för stora skärmar + Desktop visningsregler */
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -615,46 +611,53 @@ footer p {
   .welcome-and-leaves {
     display: flex;
     justify-content: center;
-  align-items: center;
-  gap: 1rem;
+    align-items: center;
+    gap: 1rem;
   }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  max-width: 30rem;
-}
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 30rem;
+  }
 
-.fika,
-.shop,
-.create {
-  display: grid;
-  align-items: center;
-  padding: 1rem;
-  margin: 1rem;
-  border: 2px solid #e0e3d3;
-  background-color: #e0e3d3;
-}
+  .fika,
+  .shop,
+  .create {
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #e0e3d3;
+    background-color: #e0e3d3;
+  }
 
-.meetings {
-  display: flex;
-  flex-direction: column;
-}
+  .meetings {
+    display: flex;
+    flex-direction: column;
+  }
 
-.meeting {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
+  .meeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 
-.meeting-buttons {
- gap: 3rem;
-}
+  .meeting-buttons {
+    gap: 3rem;
+  }
 
-.meeting p, .meeting h3 {
-  font-size: 1.4rem;
-}
+  .meeting p, .meeting h3 {
+    font-size: 1.4rem;
+  }
 
+  .meeting-description {
+    display: block;
+  }
+
+  /* Gör att elementet syns bara på desktop */
+  .desktop-only {
+    display: block;
+  }
 }

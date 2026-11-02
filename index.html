@@ -6,7 +6,7 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+      href="https://googleapis.com"
     />
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js" defer></script>
@@ -14,8 +14,6 @@
   </head>
 
   <body>
-    <!--body-->
-
     <!-- HEADER -->
     <header>
       <img class="logo-image" src="images/raven-small.svg" alt="" />
@@ -30,7 +28,6 @@
       </div>
 
       <!--NAVIGERING-->
-
       <button class="menu-toggle" type="button" aria-label="Meny">
         <span class="bar1"></span>
         <span class="bar2"></span>
@@ -48,8 +45,6 @@
     </header>
 
     <main>
-      <!--main-->
-
       <!-- HERO -->
       <section class="hero">
         <div class="hero-content">
@@ -59,6 +54,11 @@
 
           <div class="hero-text">
             <p>Kaffe, hantverk och en stund för dig.</p>
+
+             <p class="desktop-only">
+    Välkommen till en kreativ mötesplats där doften av nybryggt kaffe möter skaparglädje. 
+    Hos oss kan du landa med ditt favorithandarbete, lära dig något nytt eller bara njuta av en mysig fika.
+  </p>
           </div>
         </div>
 
@@ -81,7 +81,6 @@
 
         <!-- Dekorativ avdelare -->
         <div class="lines" aria-hidden="true">
-          <!--aria-hidden="true" döljer innehållet för skärmläsare-->
           <span class="decoration-line"></span>
           <img
             class="hr-mushroom"
@@ -145,7 +144,6 @@
         <h2>Hitta din pysselstund</h2>
         <p>Välj kategori för att se kommande träffar.</p>
 
-        <!-- Kategorilänkar: ändras till knappar vid filtreringen. -->
         <div class="meeting-buttons">
           <a class="m-button1" href="all.html">Alla</a>
           <a class="m-button2" href="crafts.html">Hantverk</a>
@@ -153,7 +151,7 @@
         </div>
 
         <div class="meeting-grid">
-          <!-- KORT 1 -->
+          <!-- KORT 1 (Sticka & fika) -->
           <article class="meeting">
             <img
               src="images/sticka.jpg"
@@ -168,11 +166,12 @@
                 <p>Korp &amp; Koppar</p>
               </div>
 
-              <div class="desktop-only"></div>
-              <p>
-                Ta med ditt handarbete eller testa stickning på plats! Vi skapar
-                och fikar tillsammans.
-              </p>
+              <div class="desktop-only">
+                <p>
+                  Ta med ditt handarbete eller testa stickning på plats! Vi skapar
+                  och fikar tillsammans.
+                </p>
+              </div>
 
               <a class="meeting-link" href="pyssel.html#sticka">
                 Läs mer
@@ -185,7 +184,7 @@
             </div>
           </article>
 
-          <!-- KORT 2 -->
+          <!-- KORT 2 (Skapa tillsammans) -->
           <article class="meeting">
             <img src="images/skapa.jpg" alt="" />
 
@@ -221,7 +220,6 @@
       <section class="creation-generator">
         <h2>Lite skaparlust?</h2>
         <img class="bottom-flower" src="images/bottom-flowers.svg" alt="" />
-        <!-- Idégenerator med JavaScript läggs till senare. -->
       </section>
     </main>
 
@@ -240,12 +238,12 @@
 
       <ul class="social-links">
         <li>
-          <a href="https://www.instagram.com/">
+          <a href="https://instagram.com">
             <img src="images/instagram.svg" alt="Instagram" />
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/">
+          <a href="https://facebook.com">
             <img src="images/facebook.svg" alt="Facebook" />
           </a>
         </li>
