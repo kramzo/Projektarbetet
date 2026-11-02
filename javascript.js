@@ -55,10 +55,8 @@ contactForm.addEventListener("submit", function(event) {
     errors.push("Meddelandefältet tomt. Vänligen fyll i meddelande.");
   }
 
-if (errors.length === 0) {
-} else {
-  errorList.textContent = errors.join(" "); //join(" ") sätter ihop meddelandena till en text med mellanslag mellan dem
-}
+
+  errorList.textContent = errors.join(" "); //join(" ") sätter ihop meddelandena till en text med mellanslag mellan dem = "”Sätt felrutans text till felmeddelandena, ihopkopplade med mellanslag.”"
 
 });
 
