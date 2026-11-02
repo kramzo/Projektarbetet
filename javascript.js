@@ -23,7 +23,7 @@ const menu = document.querySelector(".menu"); /*Navigering*/
 
 if (contactForm) {
 
-contactForm.addEventListener("submit", function(event) {
+contactForm.addEventListener("submit", function() {
   // Alla kontroller ligger här inne.
   event.preventDefault();
 
@@ -45,7 +45,7 @@ contactForm.addEventListener("submit", function(event) {
   
    } else if (!email.includes("@")) {
 
-    errors.push("Fyll i giltig e-mailadress.")
+    errors.push("Fyll i giltig e-mailadress.");
   
   }
 
@@ -71,6 +71,6 @@ contactForm.addEventListener("reset", function() {
 /*NAVIGERINGMENY*/
 
 menuToggle.addEventListener("click", function(event) {
-  menuToggle.classList.toggle("change"); // Får navigeringens animation att hända; "förändras"
-  menu.classList.toggle("open"); //Gör att menyn öppnas när man klickar på navigationen
+ menuToggle.classList.toggle("change"); // Knappens streck blir ett X.
+menu.classList.toggle("open");         // Navigeringen visas eller döljs.
 });
