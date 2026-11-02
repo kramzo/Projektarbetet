@@ -76,18 +76,18 @@ header {
 
 .logo p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .menu {
-  display: block;
+  display: none;
   grid-column: 3;
   width: auto;
   justify-self: end;
 }
 
 .menu.open {
-  display: none;
+  display: block;
 }
 
 .menu ul {
@@ -637,11 +637,24 @@ footer p {
   background-color: #e0e3d3;
 }
 
-.meeting {
+.meetings {
   display: flex;
+  flex-direction: column;
+}
+
+.meeting {
+  display: grid;
   align-items: center;
-  justify-content: space-around;
- margin: 4rem 4rem 4rem 4rem; 
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.meeting-buttons {
+ gap: 3rem;
+}
+
+.meeting p, .meeting h3 {
+  font-size: 1.4rem;
 }
 
 }
