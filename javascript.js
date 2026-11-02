@@ -25,12 +25,7 @@ contactForm.addEventListener("submit", function(event) {
   // Alla kontroller ligger här inne.
   event.preventDefault();
 
-});
-  /*Återställer felmeddelandena*/
-contactForm.addEventListener("reset", function() {
-  errorList.textContent = "";
 
-});
 
   const name = nameInput.value.trim(); //Hämtar värdet och tar bort blanksteg
   const email = emailInput.value.trim();
@@ -62,3 +57,10 @@ contactForm.addEventListener("reset", function() {
 
 });
 
+  /*Återställer felmeddelandena*/
+contactForm.addEventListener("reset", function() {
+  errorList.textContent = "";
+
+});
+
+}
