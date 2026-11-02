@@ -17,18 +17,20 @@ const errorList = document.querySelector(".error-list"); /*Formulär: Visa felme
 
 
 
-/*/ / Kontrollera formulärets obligatoriska fält
-const name = nameInput.value.trim();
-const email = emailInput.value.trim();
-const message = messageInput.value.trim();*/
-
-
-
 /*En funktion som samlar det som blivit fel och körs om fälten är tomma*/
+
+if (contactForm) {
 
 contactForm.addEventListener("submit", function(event) {
   // Alla kontroller ligger här inne.
   event.preventDefault();
+
+});
+  /*Återställer felmeddelandena*/
+contactForm.addEventListener("reset", function() {
+  errorList.textContent = "";
+
+});
 
   const name = nameInput.value.trim(); //Hämtar värdet och tar bort blanksteg
   const email = emailInput.value.trim();
@@ -60,7 +62,3 @@ contactForm.addEventListener("submit", function(event) {
 
 });
 
-/*Kom som återställer meddelandefältet*/
-contactForm.addEventListener("reset", function() {
-  errorList.textContent = "";
-});
