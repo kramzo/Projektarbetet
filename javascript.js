@@ -2,7 +2,7 @@
 
 console.log("JavaScript är laddat");
 
-/* Hämta första fältgruppen */
+/*-----------------------------*/
 
 /*HÄMTAT FORMULÄRINNEHÅLL*/
 const contactForm = document.querySelector("#contact-form"); /*Hela formuläret*/
@@ -13,18 +13,19 @@ const messageInput = document.querySelector("#message"); /*Formulär: Meddelande
 
 const errorList = document.querySelector(".error-list"); /*Formulär: Visa felmeddelande*/
 
-// errorList.textContent ="Här kommer felmeddelande att visas."
+/*HÄMTAT NAVIGERINGENS KNAPPMENY*/
+const menuToggle = document.querySelector(".menu-toggle"); /*Navigering, knappmeny*/
+const menu = document.querySelector(".menu"); /*Navigering*/
 
+/*-----------------------------*/
 
-
-/*En funktion som samlar det som blivit fel och körs om fälten är tomma*/
+/*FORMULÄRHANTERING*/
 
 if (contactForm) {
 
 contactForm.addEventListener("submit", function(event) {
   // Alla kontroller ligger här inne.
   event.preventDefault();
-
 
 
   const name = nameInput.value.trim(); //Hämtar värdet och tar bort blanksteg
@@ -64,3 +65,12 @@ contactForm.addEventListener("reset", function() {
 });
 
 }
+
+/*-----------------------------*/
+
+/*NAVIGERINGMENY*/
+
+menuToggle.addEventListener("click", function(event) {
+  menuToggle.classList.toggle("change"); // Får navigeringens animation att hända; "förändras"
+  menu.classList.toggle("open"); //Gör att menyn öppnas när man klickar på navigationen
+});
