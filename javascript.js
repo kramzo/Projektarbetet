@@ -17,10 +17,10 @@ const errorList = document.querySelector(".error-list"); /*Formulär: Visa felme
 
 
 
-// Kontrollera formulärets obligatoriska fält
+/*/ / Kontrollera formulärets obligatoriska fält
 const name = nameInput.value.trim();
 const email = emailInput.value.trim();
-const message = messageInput.value.trim();
+const message = messageInput.value.trim();*/
 
 
 
@@ -55,7 +55,11 @@ contactForm.addEventListener("submit", function(event) {
     errors.push("Meddelandefältet tomt. Vänligen fyll i meddelande.");
   }
 
-  errorList.textContent = errors.join(" "); //join(" ") säter ihop meddelandena till en text med mellanslag mellan dem
+if (errors.length === 0) {
+} else {
+  errorList.textContent = errors.join(" "); //join(" ") sätter ihop meddelandena till en text med mellanslag mellan dem
+}
+
 });
 
 /*Kom som återställer meddelandefältet*/
