@@ -198,6 +198,40 @@ footer p {
   gap: 0.4rem;
 }
 
+/*-----BUTTONS-----*/
+
+/*--Knappar, utseende--*/
+.hero-button, .m-button1, .meeting-link {
+  font-size: 15px;
+  background-color: #954822;
+  border: 2.5px solid #954822;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  color: #954822;
+}
+
+
+/* Knappar, placering och animation */
+
+
+/*Knapparna i listan för olika möten*/
+.meeting-buttons a {
+  transition: transform 0.2s;
+}
+
+.meeting-buttons a:hover,
+.meeting-buttons a:focus-visible {
+  transform: translateY(-3px);
+}
+
+
 /*--------------*/
 /*--STARTSIDAN--*/
 /*--------------*/
@@ -233,15 +267,8 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
-  font-weight: bold;
   align-items: center;
-  margin: 0;
   padding: 1rem;
-}
-
-.button-arrow {
-  width: 20px;
-  height: auto;
 }
 
 .hero-button {
@@ -249,19 +276,6 @@ footer p {
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  font-size: 15px;
-  background-color: #954822;
-  border: 2.5px solid #954822;
-  color: white;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  text-decoration: none;
-}
-
-.hero-button-secondary {
-  background-color: transparent;
-  color: #954822;
 }
 
 .hero-image {
@@ -336,7 +350,11 @@ footer p {
 
 .fika-arrow {
   display: flex;
+  justify-self: end;
+  background-color: #ffffff;
   justify-content: flex-end;
+  border-radius: 2rem;
+  padding: 0.6rem;
   margin-top: 0.5rem;
 }
 
@@ -457,12 +475,6 @@ footer p {
   justify-content: center;
   gap: 0.3rem;
   padding: 0.4rem 0.8rem;
-  color: #ffffff;
-  border: 1px solid #954822;
-  border-radius: 1.5rem;
-  background-color: #954822;
-  text-decoration: none;
-  font-weight: 600;
   font-size: 0.85rem;
   grid-column: 2;
   grid-row: 2;
