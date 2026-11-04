@@ -631,6 +631,54 @@ gap: 0.5rem;
   font-weight: 300;
 }
 
+/*-----------------*/
+/*--PYSSELTRÄFFAR--*/
+/*-----------------*/
+
+
+.pyssel-meeting-1, .pyssel-meeting-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 50rem;
+  padding: 2rem;
+  border: 1px solid #954822;
+  border-radius: 1rem;
+}
+
+.pyssel-meeting-1 img, .pyssel-meeting-2 img {
+  width: 20rem;
+  height: auto;
+}
+
+.sticka-prices, .skapa-prices {
+ padding: 1rem;
+ background-color: rgb(149, 72, 34, 40%);
+  border-radius: 1rem;
+}
+
+.pyssel-meeting-1,
+.pyssel-meeting-2 {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.pyssel-meeting-1 > img,
+.pyssel-meeting-2 > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sticka-prices,
+.skapa-prices {
+  
+  justify-self: end;
+}
+
+
 /* Default Mobile-First State: Dölj på mobiler */
 .desktop-only {
   display: none;
@@ -684,8 +732,7 @@ gap: 0.5rem;
 
 .hero p, .hero h1 {
     color: white;
-  text-shadow: 0 2px 5px rgb(0 0 0 / 85%);
-}
+  text-shadow: 0 2px 5px rgb(0 0 0 / 90%);
 }
 
 .hero-panel {
