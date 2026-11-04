@@ -79,11 +79,18 @@ menu.classList.toggle("open");         // Navigeringen visas eller döljs.
 
 /*PRISLISTA, CAFE*/
 
-function renderMenu(items) {
- cafeMenu = document.querySelector(".cafe-menu")
-}
 
-cafeMenu.innerHTML = renderMenu(items);
+function renderMenu(items) { //skapar funktion och sätter in alla 'items' i den
+const cafeMenu = document.querySelector(".cafe-menu tbody");
+
+
+//Skapar rader med celler: rader. textContent ger oss innehållet som är ett item i arrayen (namn) och pris
+for (let i = 0; i < items.length; i++) {
+const rad = cafeMenu.insertRow();
+rad.insertCell().textContent = items[i].namn;
+rad.insertCell().textContent = items[i].pris + " kr";
+}
+}
 
 const items = [
   {
@@ -121,8 +128,7 @@ const items = [
     pris: 65,
     kategori: "Erbjudande"
   }
-];
+]
 
-const rad = cafeMenu.insertRow();
-rad.insertCell().textContent = items[0].namn;
-rad.insertCell().textContent = items[0].pris + " kr";
+
+renderMenu(items);
