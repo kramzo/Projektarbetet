@@ -1,35 +1,40 @@
 <!doctype html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link
+    <link
       rel="stylesheet"
       href="https://googleapis.com"
     />
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js" defer></script>
+    <title>Hem | Korp & Koppar</title>
+  </head>
 
-  <title>Korp & Koppar</title>
-</head>
-
-<body>
-  <!-- BODY -->
-
-  <header>
+  <body>
     <!-- HEADER -->
-    <img class="logo-image" src="images/raven-light-orange.png" alt="Logotyp av korp som står ovan på en kaffekopp" />
+    <header>
+      <img class="logo-image" src="images/raven-small.svg" alt="" />
 
-    <div class="logo">
-      <a class="logo-text" href="index.html">Korp & Koppar</a>
-      <p>FIKA <span class="dot">&bull;</span>
-HANTVERK <span class="dot">&bull;</span>
-GEMENSKAP</p>
-    </div>
+      <div class="logo">
+        <a class="logo-text" href="index.html">Korp & Koppar</a>
+        <p>
+          FIKA <span class="dot">&bull;</span> HANTVERK
+          <span class="dot">&bull;</span>
+          GEMENSKAP
+        </p>
+      </div>
 
-      <!--NAVIGERING-->      
-      <nav>
+      <!--NAVIGERING-->
+      <button class="menu-toggle" type="button" aria-label="Meny">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </button>
+
+      <nav class="menu">
         <ul>
           <li><a href="index.html">Hem</a></li>
           <li><a href="fika-butik.html">Fika &amp; butik</a></li>
@@ -39,60 +44,148 @@ GEMENSKAP</p>
       </nav>
     </header>
 
-  </header>
-  <!-- HEADER -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Fika, skapa &amp; stanna en stund.</h1>
 
-  <!-------->
-  <main>
-    <!--MAIN-->
-    <!-------->
+          <img class="hero-corner-leaf" src="images/corner-leaf.png" alt="" />
 
-    <!--HERO-->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Lilla butiken</h1>
-        <img class="hero-corner-leaf" src="images/corner-leaf.png">
-        <div class="hero-text">
-        <p>Här finns något för alla pysslare och skattletare!</p>
+          <div class="hero-text">
+            <p>Kaffe, hantverk och en stund för dig.</p>
+
+             <p class="desktop-only">
+    Välkommen till en kreativ mötesplats där doften av nybryggt kaffe möter skaparglädje. 
+    Hos oss kan du landa med ditt favorithandarbete, lära dig något nytt eller bara njuta av en mysig fika.
+  </p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="hero-button" href="fika-butik.html#meny">
+            Se menyn
+            <img class="button-arrow" src="images/arrow-white.svg" alt="" />
+          </a>
+
+          <a class="hero-button hero-button-secondary" href="pyssel.html">
+            Hitta en pysselträff
+          </a>
+        </div>
+
+        <img
+          class="hero-image"
+          src="images/hero-image.jpg"
+          alt="En sax och ett ritblock på ett bord"
+        />
+
+        <!-- Dekorativ avdelare -->
+        <div class="lines" aria-hidden="true">
+          <span class="decoration-line"></span>
+          <img
+            class="hr-mushroom"
+            src="images/mini-mushroom-orange.svg"
+            alt=""
+          />
+          <span class="decoration-line"></span>
+        </div>
+      </section>
+
+      <!--ÖPPETTIDER-->
+<div class="opening-hours-border">
+          <h2>Öppettider</h2>
+          <br>        
+  <table class="opening-hours" border="1">
+            
+  <thead>
+    <tr>
+      <th>Dag</th>
+      <th>Tid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Måndag</td><td class="closed">STÄNGT</td>
+    </tr>
+      <tr>
+      <td>Tisdag - fredag</td>   <td>11:00 - 18:00</td>
+    </tr>
+      <tr>
+      <td>Tisdag - fredag</td>   <td>11:00 - 18:00</td>
+    </tr>
+      <tr>
+      <td>Lördag - söndag</td>         <td>11:00 - 16:00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!--FIKAMENY-->
+<div class="pastry-menu-border">S
+  <h2>Fikameny</h2>
+  <table class="pastry-menu">
+  <thead>
+    <tr>
+      <th>Dryck och bakverk</th>
+      <th>Pris</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bryggkaffe, påtår ingår</td><td> 35kr</td>
+    </tr>
+      <tr>
+      <td>Te</td>   <td>35kr</td>
+    </tr>
+      <tr>
+      <td>Varm choklad med vispgrädde	</td>   <td>49 kr</td>
+    </tr>
+      <tr>
+      <td>Kardemummabulle</td>         <td>39 kr</td>
+    </tr>
+      <tr>
+      <td>Chokladboll</td>         <td>29 kr</td>
+    </tr>
+      <tr>
+      <td>Kardemummabulle</td>         <td>39 kr</td>
+    </tr>
+      <tr>
+      <td>Kardemummabulle</td>         <td>39 kr</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+Bryggkaffe, påtår ingår	35 kr
+Te	35 kr
+Kardemummabulle	39 kr
+
+Blåbärspaj med vaniljsås	59 kr
+Kaffe eller te + kardemummabulle	65 kr</article>
+
+    <!-- FOOTER -->
+    <footer>
+      <img
+        class="logo-footer"
+        src="images/raven-small.svg"
+        alt="Korp &amp; Koppar"
+      />
+      <div class="welcome-and-leaves">
+        <img class="footer-leaf" src="images/footer-leaf.png" alt="" />
+        <p>Välkommen in</p>
+        <img class="footer-leaf2" src="images/footer-leaf.png" alt="" />
       </div>
-      </div>
-      <!--LINES-->
-      <div class="lines">
-      <hr><img class="hr-mushroom" src="images/mini-mushroom-orange.png"><hr>
-      </div>
 
-    </section>
-
- 
-
-     <article>
-        <h1>Välkommen till caféet!</h1>
-        <p>Här hittar du öppettider för vårt café och prislistan för allt smarrigt att äta och dricka</p>
-
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
-     </article>
-  </main>
-
-  <footer>
-    <img class="logo-footer" src="images/raven-light-orange.png" />
-    <br>
-    <img class="footer-leaf" src="images/footer-leaf.png">
-    <p>Välkommen in</p>
-    <img class="footer-leaf2" src="images/footer-leaf.png">
-    <br>
-    <ul class="social-links">
-      <li><a href="https://www.instagram.com/">Instagram</a></li>
-      <li><a href="https://www.facebook.com/">Facebook</a></li>
-    </ul>
-  </footer>
-  </footer>
-</body>
-<!-- BODY -->
-
+      <ul class="social-links">
+        <li>
+          <a href="https://instagram.com">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

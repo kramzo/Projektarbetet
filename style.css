@@ -588,6 +588,40 @@ footer p {
   color: #ffffff;
 }
 
+/*----------------*/
+/*-BUTIK-&-PYSSEL-*/
+/*----------------*/
+
+
+.opening-hours-border, .pastry-menu-border {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.opening-hours, .pastry-menu {
+  border: 1px solid #c3b79e;
+  border-collapse: separate;
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.opening-hours td {
+  padding: 1rem;
+  border-style: none;
+}
+
+.opening-hours th {
+  border-style: none;
+}
+
+.closed {
+  font-weight: 700;
+}
+
 /* Default Mobile-First State: Dölj på mobiler */
 .desktop-only {
   display: none;
