@@ -74,3 +74,6 @@ menuToggle.addEventListener("click", function(event) {
  menuToggle.classList.toggle("change"); // Knappens streck blir ett X.
 menu.classList.toggle("open");         // Navigeringen visas eller döljs.
 });
+
+/*PRISLISTA, CAFE*/
+
