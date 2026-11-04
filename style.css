@@ -593,20 +593,21 @@ footer p {
 /*----------------*/
 
 
-.opening-hours-border, .pastry-menu-border {
+.opening-hours-border, .cafe-menu-border {
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+margin: 2rem;
 }
 
-.opening-hours, .pastry-menu {
+.opening-hours, .cafe-menu {
   border: 1px solid #c3b79e;
   border-collapse: separate;
   font-family: inherit;
   padding: 1rem;
   border-radius: 1rem;
+
 }
 
 .opening-hours td {
@@ -620,6 +621,12 @@ footer p {
 
 .closed {
   font-weight: 700;
+}
+
+.cafe-menu td {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 /* Default Mobile-First State: Dölj på mobiler */
