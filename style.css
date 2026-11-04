@@ -496,12 +496,15 @@ footer p {
 /* IDÉGENERATOR */
 
 .creation-generator {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 91px;
-  padding: 10px 40px 10px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #e0d7e4;
+}
+
+.creation-generator p, .creation-generator h2{
+  display: flex;
+  flex-direction: row;
+
 }
 
 .bottom-flower {
