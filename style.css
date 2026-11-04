@@ -281,7 +281,8 @@ footer p {
 .hero-image {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 /* DEKORATIV AVDELARE */
@@ -599,6 +600,7 @@ footer p {
   flex-direction: column;
   align-items: center;
 margin: 2rem;
+gap: 0.5rem;
 }
 
 .opening-hours, .cafe-menu {
@@ -634,11 +636,11 @@ margin: 2rem;
   display: none;
 }
 
+
 /*-----------------*/
 /*--MEDIA-QUERIES--*/
 /*-----------------*/
 
-/* Navigeringsmenyn/hamburgermeny för stora skärmar + Desktop visningsregler */
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -654,6 +656,45 @@ margin: 2rem;
     flex-direction: row;
     gap: 20px;
   }
+
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-content {
+  background-color:transparent;
+}
+
+.hero-home {
+  background-image: url("images/hero-home.jpg");
+}
+
+.hero-cafe {
+  background-image: url("images/hero-cafe.jpg");
+}
+
+.hero-pyssel {
+  background-image: url("images/hero-pyssel.jpg");
+}
+
+.hero p, .hero h1 {
+    color: white;
+  text-shadow: 0 2px 5px rgb(0 0 0 / 85%);
+}
+}
+
+.hero-panel {
+  justify-self: center;
+  max-width: 40rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color:;
+}
 
   footer {
     display: flex;
