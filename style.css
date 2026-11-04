@@ -635,34 +635,18 @@ gap: 0.5rem;
 /*--PYSSELTRÄFFAR--*/
 /*-----------------*/
 
-
-.pyssel-meeting-1, .pyssel-meeting-2 {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  width: 50rem;
-  padding: 2rem;
-  border: 1px solid #954822;
-  border-radius: 1rem;
-}
-
-.pyssel-meeting-1 img, .pyssel-meeting-2 img {
-  width: 20rem;
-  height: auto;
-}
-
-.sticka-prices, .skapa-prices {
- padding: 1rem;
- background-color: rgb(149, 72, 34, 40%);
-  border-radius: 1rem;
-}
-
 .pyssel-meeting-1,
 .pyssel-meeting-2 {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
+  gap: 1rem;
+  width: 75%;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #954822;
+  border-radius: 1rem;
 }
 
 .pyssel-meeting-1 > img,
@@ -674,11 +658,20 @@ gap: 0.5rem;
 
 .sticka-prices,
 .skapa-prices {
-  
-  justify-self: end;
+  width: auto;
+  margin: 1rem 0 0 auto;
+  padding: 1rem;
+  background-color: rgb(149 72 34 / 40%);
+  border-radius: 1rem;
 }
 
-
+@media (min-width: 768px) {
+  .pyssel-meeting-1,
+  .pyssel-meeting-2 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    padding: 2rem;
+  }
+}
 /* Default Mobile-First State: Dölj på mobiler */
 .desktop-only {
   display: none;

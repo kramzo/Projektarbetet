@@ -134,29 +134,3 @@ const items = [
 renderMenu(items);
 
 
-/*PRISLISTA, STICKA OCH SKAPA*/
-
-function renderPyssel(pysselItems) {
-  const stickaPrices = document.querySelector(".sticka-prices");
-}
-
-//Skapar rader med celler: rader. textContent ger oss innehållet som är ett item i arrayen (namn) och pris
-for (let i = 0; i < pysselItems.length; i++) {
-const rad = stickaPrices.insertRow();
-rad.insertCell().textContent = pysselItems[i].aktivitet;
-rad.insertCell().textContent = pysselItems[i].pris + " kr";
-}
-}
-
-const items = [
-  {
-    aktivitet: "Sticka",
-    pris: 35,
-    kategori: "Aktivitet"
-  },
-  {
-    namn: "Te",
-    pris: 35,
-    kategori: "Aktivitet"
-  }
-]
