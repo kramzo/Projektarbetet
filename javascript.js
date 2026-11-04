@@ -17,6 +17,8 @@ const errorList = document.querySelector(".error-list"); /*Formulär: Visa felme
 const menuToggle = document.querySelector(".menu-toggle"); /*Navigering, knappmeny*/
 const menu = document.querySelector(".menu"); /*Navigering*/
 
+/*const cafeMenu = document.querySelector(".cafe-menu") /*Prislista för bakverk och dryck*/
+
 /*-----------------------------*/
 
 /*FORMULÄRHANTERING*/
@@ -77,3 +79,50 @@ menu.classList.toggle("open");         // Navigeringen visas eller döljs.
 
 /*PRISLISTA, CAFE*/
 
+function renderMenu(items) {
+ cafeMenu = document.querySelector(".cafe-menu")
+}
+
+cafeMenu.innerHTML = renderMenu(items);
+
+const items = [
+  {
+    namn: "Bryggkaffe, påtår ingår",
+    pris: 35,
+    kategori: "Dryck"
+  },
+  {
+    namn: "Te",
+    pris: 35,
+    kategori: "Dryck"
+  },
+  {
+    namn: "Varm choklad med vispgrädde",
+    pris: 49,
+    kategori: "Dryck"
+  },
+  {
+    namn: "Kardemummabulle",
+    pris: 39,
+    kategori: "Bakverk"
+  },
+  {
+    namn: "Chokladboll",
+    pris: 29,
+    kategori: "Bakverk"
+  },
+  {
+    namn: "Blåbärspaj med vaniljsås",
+    pris: 59,
+    kategori: "Bakverk"
+  },
+  {
+    namn: "Kaffe eller te + kardemummabulle",
+    pris: 65,
+    kategori: "Erbjudande"
+  }
+];
+
+const rad = cafeMenu.insertRow();
+rad.insertCell().textContent = items[0].namn;
+rad.insertCell().textContent = items[0].pris + " kr";
