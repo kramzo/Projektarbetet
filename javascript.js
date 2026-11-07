@@ -25,7 +25,7 @@ const menu = document.querySelector(".menu"); /*Navigering*/
 
 if (contactForm) {
 
-contactForm.addEventListener("submit", function() {
+contactForm.addEventListener("submit", function(event) {
   // Alla kontroller ligger här inne.
   event.preventDefault();
 
@@ -85,11 +85,13 @@ const cafeMenu = document.querySelector(".cafe-menu tbody");
 
 
 //Skapar rader med celler: rader. textContent ger oss innehållet som är ett item i arrayen (namn) och pris
-for (let i = 0; i < items.length; i++) {
-const rad = cafeMenu.insertRow();
-rad.insertCell().textContent = items[i].namn;
-rad.insertCell().textContent = items[i].pris + " kr";
-}
+   if (cafeMenu) {
+    for (let i = 0; i < items.length; i++) {
+      const rad = cafeMenu.insertRow();
+      rad.insertCell().textContent = items[i].namn;
+      rad.insertCell().textContent = items[i].pris + " kr";
+    }
+  }
 }
 
 const items = [

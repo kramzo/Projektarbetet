@@ -396,12 +396,24 @@ footer p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #954822;
   border-radius: 1.5rem;
+}
+
+  .m-button1 {
+  border: 1px solid #954822;
   color: #954822;
   text-decoration: none;
   font-weight: 600;
+}
+
+.m-button2, .m-button3 {
+  border: 1px solid #e0e3d3;
+  color:#111111;
+  background-color: #e0e3d3;
 }
 
 .meeting-buttons .m-button1 {
@@ -498,7 +510,8 @@ footer p {
 
 .creation-generator {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.3rem 0rem 1rem 3rem;
+  grid-template-columns: 1fr 1fr;
   background-color: #e0d7e4;
 }
 
@@ -507,6 +520,13 @@ footer p {
   flex-direction: row;
 
 }
+
+.bottom-flower-container {
+  display: flex;
+  justify-self: end;
+  padding: 0rem 1.5rem 0rem 0rem;
+}
+
 
 .bottom-flower {
   width: 95px;
@@ -590,8 +610,14 @@ footer p {
 }
 
 /*----------------*/
-/*-BUTIK-&-PYSSEL-*/
+/*-FIKA-&-BUTIK-*/
 /*----------------*/
+
+.butik-content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 .opening-hours-border, .cafe-menu-border {
@@ -634,6 +660,14 @@ gap: 0.5rem;
 /*-----------------*/
 /*--PYSSELTRÄFFAR--*/
 /*-----------------*/
+
+.pyssel-all-meetings {
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
 
 .pyssel-meeting-1,
 .pyssel-meeting-2 {
@@ -733,8 +767,24 @@ gap: 0.5rem;
   max-width: 40rem;
   padding: 1rem;
   border-radius: 0.75rem;
-  background-color:;
 }
+
+.m-button1,
+.m-button2,
+.m-button3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.bottom-flower-container {
+  display: flex;
+  justify-self: end;
+  padding: 0rem 5rem 0rem 0rem;
+}
+
+
 
   footer {
     display: flex;
@@ -754,16 +804,13 @@ gap: 0.5rem;
 
   .cards {
     display: flex;
-    flex-direction: column;
-    justify-self: center;
-    max-width: 30rem;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .fika,
   .shop,
   .create {
-    display: grid;
-    align-items: center;
     padding: 1rem;
     margin: 1rem;
     border: 2px solid #e0e3d3;
@@ -783,6 +830,10 @@ gap: 0.5rem;
 
   .meeting-buttons {
     gap: 3rem;
+  }
+
+  .m-button1, .m-button2, .m-button3 {
+    width: 10rem;
   }
 
   .meeting p, .meeting h3 {

@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="stylesheet"
-      href="https://googleapis.com"
-    />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+/>
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js" defer></script>
-    <title>Hem | Korp & Koppar</title>
+<title>Fika & butik | Korp & Koppar</title>
   </head>
 
   <body>
@@ -71,7 +70,7 @@
         <img
           class="hero-image"
           src="images/hero-cafe.jpg"
-          alt="En hand som plockar bär från en dekorerad tårtbit">
+          alt="En glasbägare vars innehåll är dekorerad med bär">
 
         <!-- Dekorativ avdelare -->
         <div class="lines" aria-hidden="true">
@@ -88,7 +87,7 @@
       <!--ÖPPETTIDER-->
 <div class="opening-hours-border">
           <h2>Öppettider</h2>
-  <table class="opening-hours" border="1">
+  <table class="opening-hours">
             
   <thead>
     <tr>
@@ -111,23 +110,40 @@
 </div>
 
 <!--FIKAMENY-->
-<div class="cafe-menu-border">
-    <h2>Meny</h2>
+<!-- FIKAMENY -->
+<div class="cafe-menu-border" id="meny">
+  <h2>Meny</h2>
+
   <table class="cafe-menu">
-  <thead>
-  </thead>
-  <tbody>
- <!--Array med fikaobjekt-->
-  </tbody>
-</table>
+    <thead>
+      <tr>
+        <th scope="col">Fika</th>
+        <th scope="col">Pris</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- JavaScript lägger till fikamenyn här. -->
+    </tbody>
+  </table>
 </div>
 
-<div class="butik-content">
-  <h2>Butiken</h2>
-  <p> Du är väl inte bara här för att äta kakor? Trodde väl det! Vi ska ju förstås skapa också!</p>
+<div class="butik-content" id="butik">
+  <h2>Lilla butiken</h2>
+  <p>
+    Här hittar du garn, stickor, virknålar, papper och material
+    till ditt nästa kreativa projekt.
+  </p>
+  <p>
+    Vi har också handgjorda småsaker och mönster för både
+    nybörjare och vana skapare. Sortimentet varierar,
+    så kika gärna in och upptäck vad som finns just nu.
+  </p>
+</div>
 
-    <!-- FOOTER -->
-    <footer>
+</main>
+
+<!-- FOOTER -->
+<footer>
       <img
         class="logo-footer"
         src="images/raven-small.svg"
@@ -138,6 +154,7 @@
         <p>Välkommen in</p>
         <img class="footer-leaf2" src="images/footer-leaf.png" alt="" />
       </div>
+      
 
       <ul class="social-links">
         <li>
