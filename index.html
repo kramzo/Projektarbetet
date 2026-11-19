@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+    <title>Hem | Korp & Koppar</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img class="logo-image" src="images/raven-small.svg" alt="" />
+
+      <div class="logo">
+        <a class="logo-text" href="index.html">Korp & Koppar</a>
+        <p>
+          FIKA <span class="dot">&bull;</span> HANTVERK
+          <span class="dot">&bull;</span>
+          GEMENSKAP
+        </p>
+      </div>
+
+      <!--NAVIGERING-->
+      <button class="menu-toggle" type="button" aria-label="Meny">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </button>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="fika-butik.html">Fika &amp; butik</a></li>
+          <li><a href="pyssel.html">Pyssel &amp; träffar</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero hero-home">
+        <div class="hero-content">
+
+          <div class="hero-panel">
+          <h1>Fika, skapa &amp; stanna en stund.</h1>
+
+          <img class="hero-corner-leaf" src="images/corner-leaf.png" alt="" />
+
+          <div class="hero-text">
+            <p>Kaffe, hantverk och en stund för dig.</p>
+
+             <p class="desktop-only">
+    Välkommen till en kreativ mötesplats där doften av nybryggt kaffe möter skaparglädje. 
+    Hos oss kan du landa med ditt favorithandarbete, lära dig något nytt eller bara njuta av en mysig fika.
+  </p>
+</div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="hero-button" href="fika-butik.html#meny">
+            Se menyn
+            <img class="button-arrow" src="images/arrow-white.svg" alt="" />
+          </a>
+
+          <a class="hero-button hero-button-secondary" href="pyssel.html">
+            Hitta en pysselträff
+          </a>
+        </div>
+
+        <img
+          class="hero-image"
+          src="images/hero-home.jpg"
+          alt="En sax och ett ritblock på ett bord"
+        />
+
+        <!-- Dekorativ avdelare -->
+        <div class="lines" aria-hidden="true">
+          <span class="decoration-line"></span>
+          <img
+            class="hr-mushroom"
+            src="images/mini-mushroom-orange.svg"
+            alt=""
+          />
+          <span class="decoration-line"></span>
+        </div>
+      </section>
+
+      <!-- GENVÄGAR -->
+      <div class="cards">
+        <!-- FIKA -->
+        <article class="fika">
+          <img class="cake" src="images/cake.svg" alt="" />
+
+          <div>
+            <h2>Fika</h2>
+            <p>Nybryggt kaffe, hembakat och goda samtal.</p>
+
+            <a class="fika-arrow" href="fika-butik.html#meny">
+              <img src="images/arrow-orange.svg" alt="Se fikamenyn" />
+            </a>
+          </div>
+        </article>
+
+        <!-- LILLA BUTIKEN -->
+        <article class="shop">
+          <img class="mushroom" src="images/mushroom.svg" alt="" />
+
+          <div>
+            <h2>Lilla butiken</h2>
+            <p>Hantverk, material och små skatter.</p>
+
+            <a class="fika-arrow" href="fika-butik.html#butik">
+              <img src="images/arrow-orange.svg" alt="Besök lilla butiken" />
+            </a>
+          </div>
+        </article>
+
+        <!-- SKAPA TILLSAMMANS -->
+        <article class="create">
+          <img class="yarn" src="images/garn.svg" alt="" />
+
+          <div>
+            <h2>Skapa tillsammans</h2>
+            <p>Pysselträffar, workshops och kreativ gemenskap.</p>
+
+            <a class="fika-arrow" href="pyssel.html#skapa">
+              <img
+                src="images/arrow-orange.svg"
+                alt="Läs mer om att skapa tillsammans"
+              />
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- HITTA DIN PYSSELSTUND -->
+      <section class="meetings">
+        <h2>Hitta din pysselstund</h2>
+        <p>Välj kategori för att se kommande träffar.</p>
+
+        <div class="meeting-buttons">
+          <a class="m-button1" href="index.html">Alla</a>
+          <a class="m-button2" href="index.html">Hantverk</a>
+          <a class="m-button3" href="index.html">Måla &amp; rita</a>
+        </div>
+
+        <div class="meeting-grid">
+          <!-- KORT 1 (Sticka & fika) -->
+          <article class="meeting">
+            <img
+              src="images/sticka.jpg"
+              alt="Stickning och kaffe på ett träbord"
+            />
+
+            <div class="meeting-content">
+              <h3>Sticka &amp; fika</h3>
+
+              <div class="meeting-details">
+                <p>Torsdag 18–20</p>
+                <p>Korp &amp; Koppar</p>
+              </div>
+
+              <div class="desktop-only">
+                <p>
+                  Ta med ditt handarbete eller testa stickning på plats! Vi skapar
+                  och fikar tillsammans.
+                </p>
+              </div>
+
+              <a class="meeting-link" href="pyssel.html#sticka">
+                Läs mer
+                <img
+                  class="meeting-arrow"
+                  src="images/arrow-white.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+
+          <!-- KORT 2 (Skapa tillsammans) -->
+          <article class="meeting">
+            <img src="images/skapa.jpg" alt="" />
+
+            <div class="meeting-content">
+              <h3>Skapa tillsammans</h3>
+
+              <div class="meeting-details">
+                <p>Söndag 14–16</p>
+                <p>Korp &amp; Koppar</p>
+              </div>
+
+              <div class="desktop-only">
+                <p>
+                  Ta med eget material eller låna på plats. Vi skissar, provar
+                  och fikar tillsammans.
+                </p>
+              </div>
+
+              <a class="meeting-link" href="pyssel.html#skapa">
+                Läs mer
+                <img
+                  class="meeting-arrow"
+                  src="images/arrow-white.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- IDÉGENERATOR -->
+ <!-- INSPIRATION -->
+<section class="creation-generator">
+  <div>
+    <h2>Lite skaparlust?</h2>
+    <p>
+      Här kommer du framöver kunna få inspiration
+      till ditt nästa pysselprojekt.
+    </p>
+  </div>
+
+  <div class="bottom-flower-container">
+    <img
+      class="bottom-flower"
+      src="images/bottom-flowers.svg"
+      alt=""
+    />
+  </div>
+</section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <img
+        class="logo-footer"
+        src="images/raven-small.svg"
+        alt="Korp &amp; Koppar"
+      />
+      <div class="welcome-and-leaves">
+        <img class="footer-leaf" src="images/footer-leaf.png" alt="" />
+        <p>Välkommen in</p>
+        <img class="footer-leaf2" src="images/footer-leaf.png" alt="" />
+      </div>
+
+      <ul class="social-links">
+        <li>
+          <a href="https://instagram.com">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

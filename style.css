@@ -1,0 +1,851 @@
+/*-------------*/
+/*--GEMENSAMT--*/
+/*-------------*/
+
+* {
+  box-sizing: border-box; /* Padding och kant räknas in i angiven bredd och höjd. */
+}
+
+body {
+  background-color: #faf5eb;
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 2rem 2rem 0rem 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+/* HEADER */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.8rem;
+  color: #ffffff;
+  background-color: #253b2f;
+  text-decoration: none;
+}
+
+.logo-image {
+  justify-self: start;
+  width: 70px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dot {
+  color: #e48658;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.menu {
+  display: none;
+  grid-column: 3;
+  width: auto;
+  justify-self: end;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  color:#ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background-color: #954822;
+}
+
+
+/*HAMBURGERMENY*/
+
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  justify-self: end;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.bar1, .bar2, .bar3 {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem;
+  color: #ffffff;
+  background-color: #253b2f;
+}
+
+.logo-footer {
+  height: 50px;
+  width: auto;
+  padding: 0.2rem;
+  margin: 0.3rem;
+}
+
+footer p {
+  white-space: nowrap;
+}
+
+.footer-leaf,
+.footer-leaf2 {
+  height: 20px;
+  width: auto;
+}
+
+.footer-leaf2 {
+  transform: scaleX(-1);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links img {
+  display: block;
+  width: 1.5rem;
+  height: auto;
+}
+
+.welcome-and-leaves {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/*-----BUTTONS-----*/
+
+/*--Knappar, utseende--*/
+.hero-button, .m-button1, .meeting-link {
+  font-size: 15px;
+  background-color: #954822;
+  border: 2.5px solid #954822;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  color: #954822;
+}
+
+
+/* Knappar, placering och animation */
+
+
+/*Knapparna i listan för olika möten*/
+.meeting-buttons a {
+  transition: transform 0.2s;
+}
+
+.meeting-buttons a:hover,
+.meeting-buttons a:focus-visible {
+  transform: translateY(-3px);
+}
+
+
+/*--------------*/
+/*--STARTSIDAN--*/
+/*--------------*/
+
+/* HERO */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background-color: #faf5eb;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.hero-corner-leaf {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 90px;
+  height: auto;
+  pointer-events: none; /* Klick går igenom bilden till innehållet bakom. */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* DEKORATIV AVDELARE */
+
+.lines {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.decoration-line {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  background-color: #954822;
+  border-radius: 999px;
+}
+
+.hr-mushroom {
+  width: 2.5rem;
+  height: auto;
+  image-rendering: auto;
+}
+
+/* GENVÄGSKORT */
+
+.fika,
+.shop,
+.create {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #e0e3d3;
+  background-color: #e0e3d3;
+  border-radius: 7px;
+}
+
+/* Ikonerna i korten */
+
+.mushroom,
+.cake,
+.yarn {
+  display: block;
+  width: 5rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Rubrik och beskrivning */
+
+.cards h2 {
+  margin: 0 0 0.3rem;
+}
+
+.cards p {
+  margin: 0;
+}
+
+/* Pilarna */
+
+.fika-arrow {
+  display: flex;
+  justify-self: end;
+  background-color: #ffffff;
+  justify-content: flex-end;
+  border-radius: 2rem;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+/* HITTA DIN PYSSELSTUND */
+
+.meetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.meetings > h2 {
+  margin: 0 0 0.5rem;
+}
+
+/* Kategoriknappar */
+
+.meeting-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.meeting-buttons a {
+  transition: transform 0.2s;
+}
+
+.meeting-buttons a:hover,
+.meeting-buttons a:focus-visible {
+  transform: translateY(-3px);
+}
+
+.m-button1,
+.m-button2,
+.m-button3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+  .m-button1 {
+  border: 1px solid #954822;
+  color: #954822;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.m-button2, .m-button3 {
+  border: 1px solid #e0e3d3;
+  color:#111111;
+  background-color: #e0e3d3;
+}
+
+.meeting-buttons .m-button1 {
+  background-color: #954822;
+  color: #ffffff;
+}
+
+/* Placeringen av korten */
+
+.meeting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Bild och text inuti varje kort */
+
+.meeting {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #c3b79e;
+  border-radius: 0.5rem;
+  background-color: #faf5eb;
+}
+
+.meeting > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+/* Kortets textgrupp */
+
+.meeting-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.meeting-content h3,
+.meeting-content p {
+  margin: 0;
+}
+
+.meeting-content h3 {
+  grid-column: span 2; /* Rubriken sträcker sig över båda kolumnerna. */
+}
+
+.meeting-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem 1rem;
+  font-size: 0.875rem;
+  grid-column: 1; /* Placerar detaljerna i vänsterkolumnen. */
+}
+
+.meeting-description {
+  line-height: 1.5;
+}
+
+.meeting-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+
+.meeting-arrow {
+  width: 16px;
+  height: auto;
+}
+
+/* Två kort bredvid varandra på större skärmar */
+@media (min-width: 48rem) {
+  .meeting-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* IDÉGENERATOR */
+
+.creation-generator {
+  display: grid;
+  padding: 1.3rem 0rem 1rem 3rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: #e0d7e4;
+}
+
+.creation-generator p, .creation-generator h2{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.bottom-flower-container {
+  display: flex;
+  justify-self: end;
+  padding: 0rem 1.5rem 0rem 0rem;
+}
+
+
+.bottom-flower {
+  width: 95px;
+  height: auto;
+}
+
+/*----------------*/
+/*--KONTAKTSIDAN--*/
+/*----------------*/
+
+.contact-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); 
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto; 
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.contact-page h1 {
+  padding: 1rem;
+}
+
+.contact-page input,
+.contact-page textarea {
+  border: 1px solid #c3b79e;
+}
+
+.form-field,
+.message-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.form-field input,
+.message-field textarea {
+  font-size: 1rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
+
+.message-field textarea {
+  height: 10rem;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.reset input {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  margin: 0;
+  border: 1px solid #954822;
+  border-radius: 0.8rem;
+  color: #954822;  
+  background-color: transparent;
+}
+
+.submit input {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.3rem 0.5rem;
+  margin: 0;
+  border: 1px solid #954822;
+  border-radius: 0.8rem;
+  background-color: #954822;
+  color: #ffffff;
+}
+
+/*----------------*/
+/*-FIKA-&-BUTIK-*/
+/*----------------*/
+
+.butik-content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.opening-hours-border, .cafe-menu-border {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+margin: 2rem;
+gap: 0.5rem;
+}
+
+.opening-hours, .cafe-menu {
+  border: 1px solid #c3b79e;
+  border-collapse: separate;
+  font-family: inherit;
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+.opening-hours td {
+  padding: 1rem;
+  border-style: none;
+}
+
+.opening-hours th {
+  border-style: none;
+}
+
+.closed {
+  font-weight: 700;
+}
+
+.cafe-menu td {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*-----------------*/
+/*--PYSSELTRÄFFAR--*/
+/*-----------------*/
+
+.pyssel-all-meetings {
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.pyssel-meeting-1,
+.pyssel-meeting-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  width: 75%;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #954822;
+  border-radius: 1rem;
+}
+
+.pyssel-meeting-1 > img,
+.pyssel-meeting-2 > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sticka-prices,
+.skapa-prices {
+  width: auto;
+  margin: 1rem 0 0 auto;
+  padding: 1rem;
+  background-color: rgb(149 72 34 / 40%);
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pyssel-meeting-1,
+  .pyssel-meeting-2 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    padding: 2rem;
+  }
+}
+/* Default Mobile-First State: Dölj på mobiler */
+.desktop-only {
+  display: none;
+}
+
+
+/*-----------------*/
+/*--MEDIA-QUERIES--*/
+/*-----------------*/
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: auto;
+    grid-column: 3;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-content {
+  background-color:transparent;
+}
+
+.hero-home {
+  background-image: url("images/hero-home.jpg");
+}
+
+.hero-cafe {
+  background-image: url("images/hero-cafe.jpg");
+}
+
+.hero-pyssel {
+  background-image: url("images/hero-pyssel.jpg");
+}
+
+.hero p, .hero h1 {
+    color: white;
+  text-shadow: 0 2px 5px rgb(0 0 0 / 90%);
+}
+
+.hero-panel {
+  justify-self: center;
+  max-width: 40rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.m-button1,
+.m-button2,
+.m-button3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.bottom-flower-container {
+  display: flex;
+  justify-self: end;
+  padding: 0rem 5rem 0rem 0rem;
+}
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .social-links {
+    gap: 3rem;
+  }
+
+  .welcome-and-leaves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .fika,
+  .shop,
+  .create {
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #e0e3d3;
+    background-color: #e0e3d3;
+  }
+
+  .meetings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .meeting-buttons {
+    gap: 3rem;
+  }
+
+  .m-button1, .m-button2, .m-button3 {
+    width: 10rem;
+  }
+
+  .meeting p, .meeting h3 {
+    font-size: 1.4rem;
+  }
+
+  .meeting-description {
+    display: block;
+  }
+
+  /* Gör att elementet syns bara på desktop */
+  .desktop-only {
+    display: block;
+  }
+}
