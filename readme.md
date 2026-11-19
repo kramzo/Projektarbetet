@@ -5,6 +5,8 @@ CSS och JavaScript (DT224G) vid Mittuniversitetet, HT2026.
 
 Webbplatsen presenterar den fiktiva verksamheten Korp & Koppar som kombinerar café, butik och pysselträffar.
 
+Målsättningen är betyg A-B. Jag tar gärna emot återkoppling på vad som uppfyller kriterierna och vad jag behöver utveckla vidare för att nå den nivån.
+
 ## Publicerad webbplats
 
 https://kramzo.github.io/Projektarbetet/
